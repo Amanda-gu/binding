@@ -1,0 +1,9 @@
+:root{
+    --bg-color: red;
+}
+
+
+body{
+    padding: 3rem;
+    background-color: var(--bg-color);
+}
