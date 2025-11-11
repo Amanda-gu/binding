@@ -1,3 +1,30 @@
-body{
-    font-family: 'Courier New', Courier, monospace;
+/* wide: sixtyfour*/
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&family=Workbench&display=swap');
+
+/* narrow: workbench*/
+@import url('https://fonts.googleapis.com/css2?family=Workbench:BLED@6&display=swap');
+
+@font-face {
+    font-family: 'Panama';
+	src: url('PanamaProportionalRegular.otf') format('opentype');
 }
+
+
+
+body{
+    font-family: "Panama", sans-serif;     
+    background-color: #F00404;  
+
+    p{
+        padding-block-end: 2rem;
+    }
+    h1{
+        font-family: "Workbench", sans-serif; 
+        font-size: 3rem;    
+    }
+    
+
+}
+
+
+

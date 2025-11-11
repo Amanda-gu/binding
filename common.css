@@ -5,5 +5,33 @@
 
 body{
     padding: 3rem;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
+
+    nav {
+
+        ol{
+            
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            color: red;
+
+
+            li {
+                background-color: black;
+                padding-inline: 1rem;
+                padding-block: 0.2rem;
+            }
+            
+            li:hover{
+                color: black;
+                background-color: transparent;
+            }
+
+        }
+    }
+
+
+
+   
 }
