@@ -1,5 +1,8 @@
 :root{
     --bg-color: red;
+    --spacing-s: 1rem;
+    --spacing-m: 2rem;
+    --spacing-l: 3rem;
 }
 
 
@@ -8,18 +11,21 @@ body{
     /* background-color: var(--bg-color); */
 
     nav {
+        position: sticky;
+        inset-block-start: 0;
 
         ol{
-            
+            padding-block: 1rem;
             display: flex;
             flex-direction: row;
-            gap: 1rem;
+            flex-wrap: wrap;
+            gap: var(--spacing-s);
             color: red;
 
 
             li {
                 background-color: black;
-                padding-inline: 1rem;
+                padding-inline: var(--spacing-s);
                 padding-block: 0.2rem;
             }
             
@@ -29,6 +35,7 @@ body{
             }
 
         }
+        margin-block-end: var(--spacing-m);
     }
 
 

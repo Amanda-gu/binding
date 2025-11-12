@@ -4,49 +4,177 @@
 /* narrow: workbench*/
 @import url('https://fonts.googleapis.com/css2?family=Workbench:BLED@6&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 @font-face {
     font-family: 'Panama';
 	src: url('PanamaProportionalRegular.otf') format('opentype');
 }
 
-
+:root{
+    --bg-color: red;
+    --spacing-s: 1rem;
+    --spacing-m: 2rem;
+    --spacing-l: 4rem;
+    --font-s: 1rem;
+    --font-m: 2rem;
+    --font-l: 3rem;
+    font-size: 110%;
+    line-height: 1.6rem;
+}
 
 body{
     font-family: "Panama", sans-serif;     
-    background-color: #F00404;  
+    background-color:var(--bg-color);  
+    
 
-    section:not(:first-child) {
-        padding-block-start: 5rem;
-        
-            .examples{
-                padding-block-start: 3rem;
+    
+    h1, h2{
+        font-family: "Workbench", sans-serif;   
+        font-variation-settings:
+            "BLED"  23,
+            "SCAN" 100;
+    }
+    
+    h1 {
+        font-size: var(--font-l); 
+        font-optical-sizing: auto;
+        line-height: 1.4em;   
+        font-variation-settings:
+            "BLED"  0,
+            "SCAN" 100;
+    }
+
+
+    .shadow{
+        font-family: "Sixtyfour", sans-serif;
+        font-variation-settings:
+            "BLED"  100,
+            "SCAN" -50;
+        font-size:calc(var(--font-m)*1.2) ;
+        letter-spacing: -0.3em;
+        position: relative;
+        left: -0.4em;
+        animation-name: headingshadow;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+    }
+
+    
+    h2 {
+        font-size: var(--font-m);
+        line-height: 1.3em;
+        position: sticky;
+        inset-block-start: 3em;
+        padding-block-end: var(--spacing-m);
+    }
+    
+    
+    article {
+        border-color: black;
+        border-style: solid;
+        border-width: 0.02rem;
+        padding-block-start: var(--spacing-l);
+        section:not(:first-child) {
+            padding-block-start: var(--spacing-l);
+            
+            }
+
+            
+        section{
+            
+            
+            p{
+                margin-block-end: var(--spacing-m);    
+                max-width: 80ch;         
+                }
+
+        /* desktop grid*/
+            @media (width > 980px) {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+
+            
+                h2{
+                    grid-column: 2/ span 3;
+                }
+
+                p, blockquote, aside, section{
+                    grid-column: 5/ span 7;
+                }
+
             }
         }
 
 
-    section p:not(:first-child){
-            margin-block-start: 3rem;             
+/* blockquotes */
+
+        #starter{
+            font-family: "Archivo Black", sans-serif;
+            font-variation-settings:
+            "BLED"  0,
+            "SCAN" 100;
+            font-size: var(--font-m);
+            line-height: 1.2em;
+          
+            grid-column: 2/ span 6;
+            
+
+            
         }
-    h1, h2{
-        font-family: "Workbench", sans-serif;   
-    }
 
-    h1 {
-        font-size: 4rem;    
-    }
-
-    h2 {
-        font-size: 2.5rem;
-        position: sticky;
-        inset-block-start: 0;
-    }
-    
-
-    article {
-        display: grid;
     }
 
 }
 
+@keyframes headingshadow {
+        0%{
+            top: -4.2rem;
+        }
+        50%{
+            top: -4rem;
+        }
+        100%{
+            top: -4.2rem;
+        }
+    }
 
+/* 
+menu on top
+.sidebar {
+    top: var(--spacing-l);
+    line-height: 2rem;
+
+
+    section {
+        padding-inline: 1.5rem;
+        padding-block: 1.3rem;
+        border-radius: 0.4rem;
+
+        summary {
+                border-bottom: dotted;
+                border-color: black;
+                font-weight:700;
+                padding-block-end: 0.5rem;
+                margin-block-end: 1.5rem;
+            }
+            p {
+                text-indent: 1rem;
+            }
+
+            p:first-child {
+                padding-block-start:var(--spacing-s);
+                }
+
+        details:first-child {
+            margin-block-end: var(--spacing-s);
+        }
+       
+    }
+
+    
+}
+ */
 
