@@ -7,7 +7,7 @@
 
 
 body{
-    padding: var(--spacing-s);
+    /* padding: var(--spacing-s); */
     /* background-color: var(--bg-color); */
 
     nav {
