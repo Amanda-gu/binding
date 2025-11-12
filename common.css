@@ -10,12 +10,12 @@ body{
     /* padding: var(--spacing-s); */
     /* background-color: var(--bg-color); */
 
-    nav {
+    nav, footer {
         position: sticky;
         inset-block-start: 0;
         background-color: black;
         height: 10vh;
-
+        z-index: 999;
         ol{
             padding-block: 1rem;
             display: flex;
@@ -42,6 +42,10 @@ body{
     }
 
 
-
+    footer{
+        *{
+            padding-inline: var(--spacing-s);
+        }
+    }
    
 }
