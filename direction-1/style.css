@@ -71,7 +71,7 @@ body{
         font-size: var(--font-m);
         line-height: 1.3em;
         position: sticky;
-        inset-block-start: 10vh;
+        inset-block-start: 9vh;
         padding: var(--spacing-s);
         margin-block-end: var(--spacing-m);
         background-color: var(--black);
@@ -93,6 +93,37 @@ body{
        
             
         section, hgroup{
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+
+
+            h1, h2, p, section{
+                    grid-column: 1/ span 4;
+                }
+            blockquote, aside{
+                    grid-column: 2/ span 3;
+                }
+
+
+                .authornametime{
+
+                    p{
+                        margin-block-end: 0;
+                    }
+                    
+                    display: block;
+                    grid-column: 2/ span 8;
+                }
+
+                 #ini{
+                    p{
+                        grid-column: 3/ span 6;
+                    } 
+            }   
+
+
             p, time, h1, h4{
                 margin-block-end: var(--spacing-m);    
                 max-width: 80ch; 
@@ -134,7 +165,10 @@ body{
                     grid-column: 2/ span 8;
                 }
 
-                
+                 #ini{
+                    p{
+                        grid-column: 3/ span 6;
+                    } 
             }   
         }
 
@@ -146,7 +180,7 @@ body{
 
 
             #starter {
-                font-size: var(--font-l);
+                font-size: var(--font-m);
                 line-height: 1.2em;
                 font-family: "Workbench", sans-serif;   
                 font-variation-settings:
@@ -154,9 +188,7 @@ body{
                 "SCAN" 100;
             }
 
-           p{
-             grid-column: 3/ span 6;
-           } 
+           
         }
   
 
