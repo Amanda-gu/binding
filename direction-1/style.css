@@ -20,7 +20,7 @@
     --font-s: 1rem;
     --font-m: 2rem;
     --font-l: 5rem;
-    font-size: 110%;
+    font-size: 120%;
     line-height: 1.6rem;
 }
 
@@ -97,11 +97,7 @@ body{
 
             display: grid;
             grid-template-columns: repeat(6, 1fr);
-
-            p, section{ 
-                padding-inline: var(--spacing-s);
-            }
-           
+            padding-inline: 5vw;       
 
 
             h1, h2, p, section{
@@ -178,7 +174,7 @@ body{
             
         }
 
-        aside, blockquote, #starter {
+        blockquote, #starter {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
         }
 
