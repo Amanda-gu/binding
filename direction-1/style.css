@@ -18,8 +18,8 @@
     --spacing-m: 2rem;
     --spacing-l: 4rem;
     --font-s: 1rem;
-    --font-m: 2rem;
-    --font-l: 5rem;
+    --font-m: 1.8rem;
+    --font-l: 4rem;
     font-size: 120%;
     line-height: 1.6rem;
 }
@@ -128,7 +128,7 @@ body{
             p, time, h1, h4{
     
                 max-width: 80ch; 
-                                    }
+            }
 
 
             h1 {
@@ -140,18 +140,15 @@ body{
                 display: grid;
                 grid-template-columns: repeat(12, 1fr);
 
-                h1{
-                    grid-column: 3/ span 12;
-                }
-                h2{
-                    grid-column: 1/ span 12;
-                }
-
-                p, section{
+                h1, .originalarticle, p, section{
                     grid-column: 3/ span 8;
                 }
-                blockquote, aside{
-                    grid-column: 7/ span 5;
+
+                aside{
+                    grid-column: 2/ span 5;
+                }
+                blockquote, .examples{
+                    grid-column: 6/ span 6;
                 }
 
 
@@ -178,9 +175,11 @@ body{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
         }
 
+        aside {
+            font-size: 0.8rem;
+        }
+
         hgroup{
-
-
 
             a {
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
