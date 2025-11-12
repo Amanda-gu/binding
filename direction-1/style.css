@@ -12,12 +12,13 @@
 }
 
 :root{
-    --bg-color: red;
+    --red: red;
+    --black: #000000;
     --spacing-s: 1rem;
     --spacing-m: 2rem;
     --spacing-l: 4rem;
     --font-s: 1rem;
-    --font-m: 2rem;
+    --font-m: 1.4rem;
     --font-l: 3rem;
     font-size: 110%;
     line-height: 1.6rem;
@@ -25,10 +26,8 @@
 
 body{
     font-family: "Panama", sans-serif;     
-    background-color:var(--bg-color);  
-    
+    background-color:var(--red);  
 
-    
     h1, h2{
         font-family: "Workbench", sans-serif;   
         font-variation-settings:
@@ -67,16 +66,23 @@ body{
         font-size: var(--font-m);
         line-height: 1.3em;
         position: sticky;
-        inset-block-start: 3em;
-        padding-block-end: var(--spacing-m);
+        inset-block-start: 10vh;
+        padding: var(--spacing-s);
+        margin-block-end: var(--spacing-m);
+        background-color: var(--black);
+        color: var(--red);
+
     }
     
     
     article {
-        border-color: black;
-        border-style: solid;
-        border-width: 0.02rem;
+ 
+        border-left: solid var(--black);
+        border-right: solid var(--black);
+
         padding-block-start: var(--spacing-l);
+
+
         section:not(:first-child) {
             padding-block-start: var(--spacing-l);
             
@@ -98,32 +104,54 @@ body{
 
             
                 h2{
-                    grid-column: 2/ span 3;
+                    grid-column: 1/ span 12;
                 }
 
-                p, blockquote, aside, section{
-                    grid-column: 5/ span 7;
+                p, section, hgroup{
+                    grid-column: 3/ span 8;
+                }
+                blockquote, aside{
+                    grid-column: 7/ span 5;
                 }
 
             }
         }
 
 
+        hgroup {
+
+            .authornametime{
+
+                * {
+                    grid-column: 3/ span 6;
+                    margin-block-end: 0;
+                }
+            }
+
+            a {
+                grid-column: 3/ span 6;
+            }
+        }
+
 /* blockquotes */
 
-        #starter{
-            font-family: "Archivo Black", sans-serif;
-            font-variation-settings:
-            "BLED"  0,
-            "SCAN" 100;
-            font-size: var(--font-m);
-            line-height: 1.2em;
-          
-            grid-column: 2/ span 6;
-            
+        #ini{
 
-            
+
+            #starter {
+                font-size: var(--font-l);
+                line-height: 1.2em;
+                font-family: "Workbench", sans-serif;   
+                font-variation-settings:
+                "BLED"  0,
+                "SCAN" 100;
+            }
+
+           p{
+             grid-column: 3/ span 6;
+           } 
         }
+  
 
     }
 
