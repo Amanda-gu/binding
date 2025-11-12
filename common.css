@@ -13,6 +13,8 @@ body{
     nav {
         position: sticky;
         inset-block-start: 0;
+        background-color: black;
+        height: 10vh;
 
         ol{
             padding-block: 1rem;
@@ -20,22 +22,22 @@ body{
             flex-direction: row;
             flex-wrap: wrap;
             gap: var(--spacing-s);
-            color: red;
+            color: rgb(0, 0, 0);
+            justify-content: left;
 
 
             li {
-                background-color: black;
+                background-color: var(--bg-color);
                 padding-inline: var(--spacing-s);
                 padding-block: 0.2rem;
             }
             
             li:hover{
-                color: black;
+                color:var(--bg-color);
                 background-color: transparent;
             }
 
         }
-        margin-block-end: var(--spacing-m);
     }
 
 

@@ -27,7 +27,7 @@
 body{
 
      @media (width > 980px) {
-        padding: var(--spacing-s);
+        padding-inline: var(--spacing-s);
      }
 
     font-family: "Panama", sans-serif;     
@@ -84,7 +84,7 @@ body{
         border-left: solid var(--black);
         border-right: solid var(--black);
 
-        padding-block-start: var(--spacing-l);
+        padding-block-start: var(--spacing-s);
 
         section:not(:first-child) {
             padding-block-start: var(--spacing-l);
@@ -93,11 +93,16 @@ body{
        
             
         section, hgroup{
-            p, a, time, h1, h4{
+            p, time, h1, h4{
                 margin-block-end: var(--spacing-m);    
                 max-width: 80ch; 
                 margin-inline: var(--spacing-s);
                                     }
+
+
+            h1 {
+                margin-block-end:0;
+            }
 
         /* desktop grid*/
             @media (width > 980px) {
@@ -119,7 +124,7 @@ body{
                 }
 
 
-                .authornametime, a {
+                .authornametime{
 
                     p{
                         margin-block-end: 0;
@@ -134,7 +139,6 @@ body{
         }
 
 
-        
 
 /* blockquotes */
 
