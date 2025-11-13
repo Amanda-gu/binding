@@ -19,7 +19,7 @@
 body{
 
      nav{
-        position: absolute;
+        position: fixed;
         bottom:0;
         background-color:var(--white);
     }
@@ -45,7 +45,7 @@ body{
                  display: grid;
                  padding-inline: 5vw;       
      
-                 h1, p, section{
+                 h1, h2, p, section{
                          grid-column: 1/ span 4;
                      }
                  blockquote, aside {
@@ -104,48 +104,51 @@ body{
 
 article {
   
-    padding-block-start: var(--spacing-s);
     
     /* article title style */
 
         
+    hgroup{
+        background-color: var(--black);
+        padding-block: var(--spacing-m);
+        color: var(--white);
+        margin-block-end: var(--spacing-m);
         h1 {
             span{
-                color: var(--black);
+                color: var(--white);
             }
-            color: var(--grey);
+            color: var(--highlight);
             font-weight: 900;
             margin-block-end: 0.4em;
             font-size: var(--font-l); 
             line-height: 1.1em;   
 
         }
-        
-        hgroup{
 
-            margin-block-end: var(--spacing-m);
-            #authorname{   
-                margin-block-end: var(--spacing-s);
-                /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  */
-                font-size: var(--font-m);
-            }
-
-            section{
+            
+        section{
+                #authorname{   
+                    margin-block-end: var(--spacing-s);
+                    font-size: var(--font-m);
+                }
                 font-size: calc(var(--font-s)*0.8);
                 line-height: 1.3em;   
                 margin-block-end: 1em;
+                color: var(--white);
             }
 
         }
 
     /* section title style  */
         section > h2 {
-              font-size: var(--font-m);
-              line-height: 1.3em;
-              position: sticky;
-              inset-block-start: 2vh;
-              margin-block-end: var(--spacing-m);
-              color: var(--black);
+            background-color: var(--white);
+            font-size: var(--font-m);
+            line-height: 1.3em;
+            position: sticky;
+            inset-block-start: 0vh;
+            margin-block-end: var(--spacing-m);
+            padding-block: var(--spacing-s);
+            color: var(--black);
       
           }
 
