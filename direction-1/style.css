@@ -18,21 +18,106 @@
     --spacing-m: 2rem;
     --spacing-l: 4rem;
     --font-s: 1rem;
-    --font-m: 1.8rem;
+    --font-m: 1.4rem;
     --font-l: 4rem;
     font-size: 120%;
     line-height: 1.6rem;
 }
 
 body{
+    font-family: "Panama", sans-serif;     
+    background-color:var(--red);  
 
+/* page margin for desktop */
      @media (width > 980px) {
         padding-inline: var(--spacing-s);
      }
 
+/* main content spacing & grid */
+    .content:not(#ini){
+                 padding-block-end: var(--spacing-l); 
 
+                 /* thank you google */
+                 p:not(blockquote p){
+                      margin-block-end: var(--spacing-m);
+                 }   
+             } 
+    .content, hgroup{
+     
+                 display: grid;
+                 padding-inline: 5vw;       
+     
+                 h1, h2, p, section{
+                         grid-column: 1/ span 6;
+                     }
+                 blockquote, aside {
+                         grid-column: 2/ span 5;
+                     }
+     
+                 .authornametime{
+     
+                         p{
+                             margin-block-end: 0;
+                         }
+                         
+                         display: block;
+                         grid-column: 2/ span 8;
+                     }
+     
+                 p, time, h1, h4{
+         
+                     max-width: 80ch; 
+                 }
+
+                 #starter{
+                     max-width: 35ch; 
+                 }
+
+
+    
+     
+/* desktop grid*/
+    @media (width > 980px) {
+                     display: grid;
+                     grid-template-columns: repeat(12, 1fr);
+     
+                     h1, .originalarticle, p, section{
+                         grid-column: 3/ span 8;
+                     }
+     
+                     aside{
+                         grid-column: 2/ span 5;
+                     }
+                     blockquote, .examples {
+                        grid-column: 6/ span 6;
+                     }
+     
+     
+                     .authornametime{
+     
+                         p{
+                             margin-block-end: 0;
+                         }
+                         
+                         display: block;
+                         grid-column: 2/ span 8;
+                     }
+     
+                      #ini{
+                         grid-column: 3/ span 4;
+                        
+                     }   
+                 }
+                 
+             }
+    
+
+
+/* main content spacing & grid */
+
+/* squares on the margin */
     canvas {
-                width: 1rem;
+                width: 5vw;
                 height: 1rem;
                 flex-shrink: 0;
                 background-color: var(--black);
@@ -80,190 +165,159 @@ body{
                 bottom: 30vh;
                 right: 0;
             }
-
-    font-family: "Panama", sans-serif;     
-    background-color:var(--red);  
-
-    h1, h2{
-        font-family: "Workbench", sans-serif;   
-        font-variation-settings:
-            "BLED"  23,
-            "SCAN" 100;
-    }
-    
-    h1 {
-        font-size: var(--font-l); 
-        font-optical-sizing: auto;
-        line-height: 1.4em;   
-        font-variation-settings:
-            "BLED"  0,
-            "SCAN" 100;
-    }
-
-
-    .shadow{
-        font-family: "Sixtyfour", sans-serif;
-        font-variation-settings:
-            "BLED"  100,
-            "SCAN" -50;
-        font-size:calc(var(--font-m)*1.2) ;
-        letter-spacing: -0.3em;
-        position: relative;
-        left: -0.4em;
-        animation-name: headingshadow;
-        animation-duration: 10s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-
-    }
+/* squares on the margin */
 
     
-    section > h2 {
-        font-size: var(--font-m);
-        line-height: 1.3em;
-        position: sticky;
-        inset-block-start: 9vh;
-        padding: var(--spacing-s);
-        margin-block-end: var(--spacing-m);
-        background-color: var(--black);
-        color: var(--red);
 
-    }
+
+
+article {
+  
+    padding-block-start: var(--spacing-s);
     
-    
-    article {
-        /* border-left: solid var(--black);
-        border-right: solid var(--black); */
-
-        padding-block-start: var(--spacing-s);
-
-        .content {
-            padding-block-end: var(--spacing-l); 
-            p{
-                 margin-block-end: var(--spacing-m);
-            }   
+    /* article title style */
+        h1, h2{
+            font-family: "Workbench", sans-serif;   
+            font-variation-settings:
+                "BLED"  23,
+                "SCAN" 100;
         }
-            
-        .content, hgroup{
+        
+        h1 {
+            border-block-end: solid var(--black);
+            border-width: 1rem;
+            margin-block-end: 0.2em;
 
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            padding-inline: 5vw;       
-
-
-            h1, h2, p, section{
-                    grid-column: 1/ span 6;
-                }
-            blockquote, aside{
-                    grid-column: 2/ span 5;
-                }
-
-
-            .authornametime{
-
-                    p{
-                        margin-block-end: 0;
-                    }
-                    
-                    display: block;
-                    grid-column: 2/ span 8;
-                }
-
-            #ini{
-                    p{
-                        grid-column: 3/ span 6;
-                    } 
-            }   
-
-
-            p, time, h1, h4{
-    
-                max-width: 80ch; 
+            font-size: var(--font-l); 
+            font-optical-sizing: auto;
+            line-height: 1em;   
+            font-variation-settings:
+                "BLED"  0,
+                "SCAN" 100;
+        }
+        
+        hgroup{
+            #authorname{   
+                margin-block-end: var(--spacing-s);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+                font-size: var(--font-m);
             }
 
-
-            h1 {
-                margin-block-end:0;
+            section, a{
+                font-size: calc(var(--font-s)*0.8);
+                line-height: 1.3em;   
+                margin-block-end: 1em;
             }
 
-        /* desktop grid*/
-            @media (width > 980px) {
-                display: grid;
-                grid-template-columns: repeat(12, 1fr);
-
-                h1, .originalarticle, p, section{
-                    grid-column: 3/ span 8;
-                }
-
-                aside{
-                    grid-column: 2/ span 5;
-                }
-                blockquote, .examples{
-                    grid-column: 6/ span 6;
-                }
-
-
-                .authornametime{
-
-                    p{
-                        margin-block-end: 0;
-                    }
-                    
-                    display: block;
-                    grid-column: 2/ span 8;
-                }
-
-                 #ini{
-                    p{
-                        grid-column: 3/ span 6;
-                    } 
-                }   
-            }
-            
         }
 
-        blockquote, #starter {
+    /* section title style  */
+        section > h2 {
+              font-size: var(--font-m);
+              line-height: 1.3em;
+              position: sticky;
+              inset-block-start: 9vh;
+              padding: calc(var(--spacing-s)/2) ;
+              margin-block-end: var(--spacing-m);
+              background-color: var(--black);
+              color: var(--red);
+      
+          }
+
+    /* intro quote */
+        #ini{
+            margin-block-end: var(--spacing-m);
+            margin-block-start: var(--spacing-s);
+        }
+
+        #starter {
+            padding-block-end: var(--spacing-s);
+            font-size: calc(var(--font-l)*0.6);
+            line-height: 1.1em;            
+            font-variation-settings:
+                    "BLED"  0,
+                    "SCAN" 100;
+        }
+
+       #quote, #starter {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
         }
 
-        aside {
-            font-size: 0.8rem;
-        }
+        blockquote{
+            
+            padding-block-end: var(--spacing-m);
 
-        hgroup{
+            font-size: calc(var(--font-s)*0.7);
+            line-height: 1.3em;   
 
+            h4, #quote{
+                 margin-block-end: var(--spacing-s);
 
-
-            a {
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
-                grid-column: 1/4;
             }
-        }
-        #starter {
-                    font-size: var(--font-m);
-                    line-height: 1.2em;
-                
-                    font-variation-settings:
-                    "BLED"  0,
-                    "SCAN" 100;
-                }
 
+            h4{
+                font-size: var(--font-s);   
+                border-block-end: solid var(--black);
+                border-width: 1rem;
+                margin-block-end: 0.2em;
+            }
+
+            #quote{
+                font-size:calc(var(--font-s)*1.2) ;
+                line-height: 1.8rem; 
+            }
+
+
+        }
+
+        blockquote:before, blockquote:after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: #ffffff;
+            width: 12px;
+            height: 12px;
+            }
+        blockquote:before {
+            left: 5px;
+            top: 5px;
+            }
+        blockquote:after {
+            right: 5px;
+            top: 5px;
+            }
+
+        #extrainfo{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+            background-color: var(--black);
+            color: var(--red);
+        }
+
+   
+
+ /* citations */
+        aside {
+            font-size: calc(var(--font-s)*0.8);
+            line-height: 1.3em; 
+        }
+
+    }
+
+    em{
+        font-weight: 700;
+    }
+
+    sup{
+        font-size: calc(var(--font-s)*0.8);
+        font-weight: 700;
+        background-color: var(--black);
+        color: var(--red);
+        vertical-align: super;
+        padding-inline: 0.3em;
 
     }
 
 }
-
-@keyframes headingshadow {
-        0%{
-            top: -4.2rem;
-        }
-        50%{
-            top: -4rem;
-        }
-        100%{
-            top: -4.2rem;
-        }
-    }
 
 /* 
 menu on top
