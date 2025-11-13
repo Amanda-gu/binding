@@ -46,10 +46,10 @@ body{
                  padding-inline: 5vw;       
      
                  h1, p, section{
-                         grid-column: 1/ span 6;
+                         grid-column: 1/ span 4;
                      }
                  blockquote, aside {
-                         grid-column: 2/ span 5;
+                         grid-column: 2/ span 3;
                      }
                 
              
@@ -61,7 +61,7 @@ body{
                          }
                          
                          display: block;
-                         grid-column: 2/ span 8;
+                         grid-column: 2/ span 4;
                      }
      
                  p, time, h1, h4{
@@ -81,15 +81,15 @@ body{
                      display: grid;
                      grid-template-columns: repeat(12, 1fr);
      
-                     h1, .originalarticle, p, section{
+                     h1, h2,.originalarticle, p, section{
                          grid-column: 3/ span 8;
                      }
      
                      aside{
-                         grid-column: 2/ span 5;
+                         grid-column: 3/ span 5;
                      }
                      blockquote, .examples {
-                        grid-column: 6/ span 6;
+                        grid-column: 5/ span 6;
                      }
      
      
@@ -141,7 +141,7 @@ article {
                 font-size: var(--font-m);
             }
 
-            section, a{
+            section{
                 font-size: calc(var(--font-s)*0.8);
                 line-height: 1.3em;   
                 margin-block-end: 1em;
@@ -154,8 +154,7 @@ article {
               font-size: var(--font-m);
               line-height: 1.3em;
               position: sticky;
-              inset-block-start: 9vh;
-              padding: calc(var(--spacing-s)/2) ;
+              inset-block-start: 2vh;
               margin-block-end: var(--spacing-m);
               color: var(--black);
       
@@ -181,7 +180,8 @@ article {
 
         blockquote{
             /* padding-block: var(--spacing-s); */
-            margin-block-end: var(--spacing-m);
+            padding-block: var(--spacing-m);
+            margin-block-end: var(--spacing-s);
             background-color: var(--grey);
 
             font-size: calc(var(--font-s)*0.7);
