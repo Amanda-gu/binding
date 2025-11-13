@@ -83,6 +83,9 @@ body{
                      h1, .originalarticle, p, section{
                          grid-column: 3/ span 8;
                      }
+                     h1{
+                         grid-column: 1/ span 6;
+                     }
      
                      aside{
                          grid-column: 2/ span 5;
