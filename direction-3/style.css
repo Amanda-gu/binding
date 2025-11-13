@@ -28,10 +28,7 @@ body{
     font-family: "Work Sans", sans-serif;    
     background-color:var(--red);  
 
-/* page margin for desktop */
-     @media (width > 980px) {
-        padding-inline: var(--spacing-s);
-     }
+
 
 /* main content spacing & grid */
     .content:not(#ini){
@@ -83,12 +80,12 @@ body{
                      display: grid;
                      grid-template-columns: repeat(12, 1fr);
      
-                     h1, h2, p, section{
+                    h1, h2, p, section{
                          grid-column: 3/ span 6;
                      }
      
                     aside{
-                         grid-column: 3/ span 4;
+                         grid-column: 8/ span 4;
                      }
                     blockquote, .examples {
                         grid-column: 5/ span 6;

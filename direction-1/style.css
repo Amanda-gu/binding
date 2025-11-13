@@ -1,6 +1,5 @@
 /* wide: sixtyfour*/
-@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&family=Workbench&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
 /* narrow: workbench*/
 @import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
 
@@ -201,12 +200,11 @@ article {
             margin-block-end: var(--spacing-m);
             #authorname{   
                 margin-block-end: var(--spacing-s);
-                /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  */
                 font-size: var(--font-m);
             }
 
             section, a{
-                font-size: calc(var(--font-s)*0.8);
+                /* font-size: calc(var(--font-s)*0.8); */
                 line-height: 1.3em;   
                 margin-block-end: 1em;
             }
@@ -227,6 +225,9 @@ article {
           }
 
     /* intro quote */
+        #quote, #starter, blockquote{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+        }
         #ini{
             margin-block-end: var(--spacing-m);
             margin-block-start: var(--spacing-s);
@@ -241,9 +242,6 @@ article {
                     "SCAN" 100;
         }
 
-       #quote, #starter {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
-        }
 
         blockquote{
             background-color: var(--black);
@@ -251,7 +249,7 @@ article {
 
             margin-block-end: var(--spacing-m);
 
-            font-size: calc(var(--font-s)*0.7);
+            /* font-size: calc(var(--font-s)*0.7); */
             line-height: 1.3em;   
 
             h4, #quote, p,time{
@@ -263,9 +261,11 @@ article {
                 margin-block-end: var(--spacing-s);
                 font-size: var(--font-s);   
             }
+            h4{
+                font-family: "Workbench", sans-serif;
+            }
 
             #quote{
-
                 line-height: 1.4em; 
             }
 
