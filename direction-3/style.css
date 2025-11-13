@@ -130,7 +130,7 @@ article {
             
         section{
                 #authorname{   
-                    margin-block-end: var(--spacing-s);
+                    margin-block: var(--spacing-s);
                     font-size: var(--font-m);
                 }
                 font-size: calc(var(--font-s)*0.8);
@@ -163,12 +163,9 @@ article {
         #starter {
             padding-block-end: var(--spacing-s);
             font-size: calc(var(--font-l)*0.6);
-            line-height: 1.1em;  
+            line-height: 1.2em;  
             color: var(--highlight) ;  
-            font-weight: 900;       
-            font-variation-settings:
-                    "BLED"  0,
-                    "SCAN" 100;
+            font-weight: 600;       
         }
 
 

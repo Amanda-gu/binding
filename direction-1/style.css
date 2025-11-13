@@ -51,7 +51,7 @@ body{
                          grid-column: 1/ span 6;
                      }
                  blockquote, aside {
-                         grid-column: 2/ span 5;
+                         grid-column: 1/ span 6;
                      }
      
                  .authornametime{
@@ -192,7 +192,7 @@ article {
             font-optical-sizing: auto;
             line-height: 1.1em;   
             font-variation-settings:
-                "BLED"  0,
+                "BLED"  100,
                 "SCAN" 100;
         }
         
@@ -248,7 +248,7 @@ article {
         blockquote{
             background-color: var(--black);
             color: var(--red);
-            /* padding-block: var(--spacing-s); */
+
             margin-block-end: var(--spacing-m);
 
             font-size: calc(var(--font-s)*0.7);
@@ -256,20 +256,17 @@ article {
 
             h4, #quote, p,time{
 
-                padding-inline: var(--spacing-m);
+                padding-inline: var(--spacing-s);
             }
 
             h4, #quote{
-                 margin-block-end: var(--spacing-s);
-            }
-
-            h4{
+                margin-block-end: var(--spacing-s);
                 font-size: var(--font-s);   
             }
 
             #quote{
-                font-size:calc(var(--font-s)*1.2) ;
-                line-height: 1.8rem; 
+
+                line-height: 1.4em; 
             }
 
 
