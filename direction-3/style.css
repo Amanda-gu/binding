@@ -5,6 +5,7 @@
     --white: rgb(255, 255, 255);
     --grey:rgb(198, 198, 198);
     --black: #000000;
+    --highlight: rgb(136, 136, 136);
     --spacing-s: 1rem;
     --spacing-m: 2rem;
     --spacing-l: 4rem;
@@ -16,6 +17,10 @@
 }
 
 body{
+
+     nav, footer{
+        background-color:var(--white);
+    }
     font-family: "Work Sans", sans-serif;    
     background-color:var(--red);  
 
@@ -161,7 +166,9 @@ article {
         #starter {
             padding-block-end: var(--spacing-s);
             font-size: calc(var(--font-l)*0.6);
-            line-height: 1.1em;            
+            line-height: 1.1em;  
+            color: var(--highlight) ;  
+            font-weight: 900;       
             font-variation-settings:
                     "BLED"  0,
                     "SCAN" 100;
@@ -169,10 +176,9 @@ article {
 
 
         blockquote{
-            background-color: var(--black);
-            color: var(--red);
             /* padding-block: var(--spacing-s); */
             margin-block-end: var(--spacing-m);
+            background-color: var(--grey);
 
             font-size: calc(var(--font-s)*0.7);
             line-height: 1.3em;   
@@ -197,25 +203,6 @@ article {
 
 
         }
-/* codepen example: https://codepen.io/Rybak/pen/eerXag */
-        blockquote:before, blockquote:after {
-            content: '';
-            display: block;
-            position: relative;
-            background-color: var(--black);
-            width: 1rem;
-            height: 1rem;
-             /* box-shadow: 40vw 0 0 0 var(--black); */
-            }
-        blockquote:before {
-            left: -1rem;
-            top: -1rem;
-            }
-        blockquote:after {
-            right: 1rem;
-            top: 1rem;
-            }
-
         #extrainfo{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
             background-color: var(--black);
@@ -233,7 +220,7 @@ article {
     }
 
     em{
-        font-weight: 700;
+        color: var(--highlight);
     }
 
     sup{
