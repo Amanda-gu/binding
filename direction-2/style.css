@@ -84,10 +84,10 @@ body{
      
 /* desktop grid*/
     @media (width > 980px) {
-                     display: grid;
-                     grid-template-columns: repeat(12, 1fr);
+                    display: grid;
+                    grid-template-columns: repeat(12, 1fr);
+                    column-gap: var(--spacing-s);
 
-                  
      
                      .originalarticle, h1, p, section{
                          grid-column: 5/ span 6;
@@ -158,15 +158,16 @@ article {
 
     /* section title style  */
         section > h2 {
-             border-block-end: solid rgb(203, 203, 203);
-                border-width: 0.02rem;
-                background-color: var(--bg);
-              font-size: var(--font-s);
-              line-height: 2em;
-              position: sticky;
-              inset-block-start: 5vh;
-              margin-block-end: var(--spacing-s);
-              color: var(--dark-grey);
+            align-self: start;
+            border-block-end: solid rgb(203, 203, 203);
+            border-width: 0.02rem;
+            background-color: var(--bg);
+            font-size: var(--font-s);
+            line-height: 2em;
+            position: sticky;
+            inset-block-start: 5vh;
+            margin-block-end: var(--spacing-s);
+            color: var(--dark-grey);
       
           }
 
@@ -207,7 +208,7 @@ article {
             margin-inline-start: var(--spacing-m);
            section{
                 position: sticky;
-                inset-block-start: 8vh;
+                inset-block-start: 9vh;
                 border-block-end: solid rgb(203, 203, 203);
                 border-width: 0.02rem;
                 background-color: rgb(241, 241, 241);
@@ -254,6 +255,7 @@ article {
 
     em{
         font-weight: 700;
+        font-style: italic;
     }
 
     sup{
