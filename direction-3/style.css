@@ -17,12 +17,14 @@
 }
 
 body{
-
-     nav{
-        position: fixed;
-        bottom:0;
-        background-color:var(--white);
+    
+    nav{
+       position: fixed;
+       top: 90%;
+       right: 0;
+       background-color:var(--white);
     }
+
     font-family: "Work Sans", sans-serif;    
     background-color:var(--red);  
 
