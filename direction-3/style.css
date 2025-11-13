@@ -109,9 +109,7 @@ article {
     padding-block-start: var(--spacing-s);
     
     /* article title style */
-        h1, h2{
-            font-family: "Workbench", sans-serif;   
-        }
+
         
         h1 {
             span{
@@ -169,9 +167,6 @@ article {
                     "SCAN" 100;
         }
 
-       #quote, #starter {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
-        }
 
         blockquote{
             background-color: var(--black);
