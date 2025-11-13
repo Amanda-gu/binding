@@ -45,12 +45,14 @@ body{
                  display: grid;
                  padding-inline: 5vw;       
      
-                 h1, h2, p, section{
+                 h1, p, section{
                          grid-column: 1/ span 6;
                      }
                  blockquote, aside {
                          grid-column: 2/ span 5;
                      }
+                
+             
      
                  .authornametime{
      
