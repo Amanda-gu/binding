@@ -186,20 +186,22 @@ article {
         h1 {
             border-block-end: solid var(--black);
             border-width: 1rem;
-            margin-block-end: 0.2em;
+            margin-block-end: 0.4em;
 
             font-size: var(--font-l); 
             font-optical-sizing: auto;
-            line-height: 1em;   
+            line-height: 1.1em;   
             font-variation-settings:
                 "BLED"  0,
                 "SCAN" 100;
         }
         
         hgroup{
+
+            margin-block-end: var(--spacing-m);
             #authorname{   
                 margin-block-end: var(--spacing-s);
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+                /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  */
                 font-size: var(--font-m);
             }
 
