@@ -1,7 +1,10 @@
 
 
 :root{
-    --light-grey: rgb(221, 221, 221);
+    --bg:  rgb(241, 241, 241);
+    --xlight-grey: #e4e7f1;
+    --light-grey: #CDD5EF;
+    --mid-grey: #B5C4F8;
     --dark-grey: rgb(108, 108, 108);
     --black: #000000;
     --spacing-s: 1rem;
@@ -14,17 +17,42 @@
     line-height: 1.6rem;
 }
 
+
 body{
+
+
+    nav{
+        background-color: rgb(231, 231, 231);
+        border-block-end: solid rgb(203, 203, 203);
+        border-width: 0.02rem;
+        height: 5vh;
+        z-index: 999;
+
+        ol{
+            display: flex;
+            color: rgb(0, 0, 0);
+            justify-content: left;
+            align-items: center;
+            padding: 0;
+
+        }
+         li {
+                background-color: gray;
+                padding: 0;
+            }
+    }
+
+
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;     
-    background-color:var(--red);  
+    background-color: rgb(241, 241, 241);
 
 /* page margin for desktop */
-     @media (width > 980px) {
-        padding-inline: var(--spacing-s);
+     @media (width > 1100px) {
+        margin-inline: var(--spacing-m);
      }
 
 /* main content spacing & grid */
-    .content:not(#ini){
+    .content:not(#ini, hgroup){
                  padding-block-end: var(--spacing-l); 
 
                  /* thank you google */
@@ -32,10 +60,11 @@ body{
                       margin-block-end: var(--spacing-m);
                  }   
              } 
-    .content, hgroup{
+    .content{
      
-                 display: grid;
-                 padding-inline: 5vw;       
+                display: grid;
+                padding-inline: var(--spacing-s);
+  
      
                  h1, h2, p, section{
                          grid-column: 1/ span 6;
@@ -44,20 +73,7 @@ body{
                          grid-column: 2/ span 5;
                      }
      
-                 .authornametime{
-     
-                         p{
-                             margin-block-end: 0;
-                         }
-                         
-                         display: block;
-                         grid-column: 2/ span 8;
-                     }
-     
-                 p, time, h1, h4{
-         
-                     max-width: 80ch; 
-                 }
+            
 
                  #starter{
                      max-width: 35ch; 
@@ -70,9 +86,14 @@ body{
     @media (width > 980px) {
                      display: grid;
                      grid-template-columns: repeat(12, 1fr);
+
+                  
      
-                     .originalarticle, section{
+                     .originalarticle, h1, p, section{
                          grid-column: 5/ span 6;
+                     }
+                     .title{
+                        grid-column: 2/ span 9;
                      }
 
                      h2{
@@ -84,15 +105,7 @@ body{
                      }
      
      
-                     .authornametime{
-     
-                         p{
-                             margin-block-end: 0;
-                         }
-                         
-                         display: block;
-                         grid-column: 2/ span 8;
-                     }
+                    
      
                       #ini{
                          grid-column: 3/ span 4;
@@ -110,104 +123,122 @@ body{
 
 
 article {
-  
-    padding-block-start: var(--spacing-s);
+
     
     /* article title style */
 
-        
-        h1 {
-            border-block-end: solid var(--black);
-            border-width: 1rem;
-            margin-block-end: 0.4em;
+    .ui{
+            border-radius: 0.3rem;
+            color: rgb(149, 149, 149);
+            font-weight: 700;
+            background-color: var(--light-grey);
+            font-size: calc(var(--font-s)*0.8);
+            padding-inline-start: 0.8rem;
+        }
+    .title{
+        background-color: rgb(238, 238, 238);
+        border-block-end: solid rgb(203, 203, 203);
+        border-width: 0.02rem;
+        margin-block-end: var(--spacing-m);
+        margin-block-start: var(--spacing-s);
 
-            font-size: var(--font-l); 
-            font-optical-sizing: auto;
-            line-height: 1.1em;   
-            font-variation-settings:
-                "BLED"  0,
-                "SCAN" 100;
+        h1, p:not(.ui) {
+            margin-block: 0.1rem;
+            font-size: var(--font-s); 
         }
         
-        hgroup{
 
-            margin-block-end: var(--spacing-m);
-            #authorname{   
-                margin-block-end: var(--spacing-s);
-              
-                font-size: var(--font-m);
-            }
-
-            section{
-                font-size: calc(var(--font-s)*0.8);
-                line-height: 1.3em;   
-                margin-block-end: 1em;
-            }
+        *{
+            padding-inline-start: 0.8rem;
+        }
+         
 
         }
 
     /* section title style  */
         section > h2 {
-              font-size: var(--font-m);
+             border-block-end: solid rgb(203, 203, 203);
+                border-width: 0.02rem;
+                background-color: var(--bg);
+              font-size: var(--font-s);
               line-height: 1.3em;
               position: sticky;
-              inset-block-start: 9vh;
-              margin-block-end: var(--spacing-m);
+              inset-block-start: 5vh;
+              margin-block-end: var(--spacing-s);
               color: var(--dark-grey);
       
           }
 
     /* intro quote */
         #ini{
-            margin-block-end: var(--spacing-m);
+            margin-inline-start: var(--spacing-m);
+            margin-block-end: var(--spacing-l);
             margin-block-start: var(--spacing-s);
+
+            .ui{
+              background-color: var(--xlight-grey);
+          } 
+            
+            p,time{  
+                padding-inline-start: 0.8rem;
+            }
+
+            section{
+                border-block-end: solid rgb(203, 203, 203);
+                border-width: 0.02rem;
+            }
+            
+
+            #starter {
+                font-size: var(--font-m);
+                padding-block-start: var(--spacing-s);
+                line-height: 1.1em;   
+              
         }
 
-        #starter {
-            padding-block-end: var(--spacing-s);
-            font-size: calc(var(--font-l)*0.6);
-            line-height: 1.1em;            
-            font-variation-settings:
-                    "BLED"  0,
-                    "SCAN" 100;
         }
 
 
 
         blockquote{
 
+            margin-block-start: var(--spacing-s);
             margin-block-end: var(--spacing-m);
-
-            font-size: calc(var(--font-s)*0.7);
-            line-height: 1.3em;   
-
-            h4, #quote, p,time{
-
-                padding-inline: var(--spacing-m);
+            margin-inline-start: var(--spacing-m);
+           section{
+             border-block-end: solid rgb(203, 203, 203);
+            border-width: 0.02rem;
+            
+           }
+            h4, p:not(.ui) {
+                margin-block: 0.1rem;
+                font-size: var(--font-s); 
+            }
+ 
+            .ui{
+                background-color: var(--xlight-grey);
             }
 
-            h4, #quote{
-                 margin-block-end: var(--spacing-s);
-            }
-
-            h4{
-                font-size: var(--font-s);   
+            section>*, #quote{  
+                padding-inline-start: 0.8rem;
             }
 
             #quote{
-                font-size:calc(var(--font-s)*1.2) ;
-                line-height: 1.8rem; 
+                padding-block-start: var(--spacing-s);
+                color: black;
             }
 
 
+          
         }
 
         #extrainfo{
           
-            background-color: var(--black);
-            color: var(--red);
+            background-color: var(--mid-grey);
+            color: var(--dark-grey);
         }
-
+        
+    
    
 
  /* citations */
@@ -223,12 +254,12 @@ article {
     }
 
     sup{
-        font-size: calc(var(--font-s)*0.8);
+        font-size: calc(var(--font-s)*0.6);
         font-weight: 700;
-        background-color: var(--black);
-        color: var(--red);
+        line-height: 0;
+        color: var(--dark-grey);
         vertical-align: super;
-        padding-inline: 0.3em;
+
 
     }
 }

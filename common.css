@@ -1,5 +1,5 @@
 :root{
-    --bg-color: red;
+    --bg-color: rgb(255, 255, 255);
     --spacing-s: 1rem;
     --spacing-m: 2rem;
     --spacing-l: 3rem;
@@ -30,7 +30,7 @@ body{
             li {
                 background-color: var(--bg-color);
                 padding-inline: var(--spacing-s);
-                padding-block: 0.2rem;
+                padding-block: 0.14rem;
             }
             
             li:hover{
