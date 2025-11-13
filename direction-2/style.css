@@ -13,7 +13,7 @@
     --font-s: 1rem;
     --font-m: 1.4rem;
     --font-l: 4rem;
-    font-size: 120%;
+    font-size: 110%;
     line-height: 1.6rem;
 }
 
@@ -100,12 +100,13 @@ body{
                         grid-column: 2/ span 3;
                      }
 
-                     aside, blockquote, .examples {
+                     blockquote, .examples {
                         grid-column: 6/ span 6;
                      }
+                     aside {
+                        grid-column: 8/ span 4;
+                     }
      
-     
-                    
      
                       #ini{
                          grid-column: 3/ span 4;
@@ -161,7 +162,7 @@ article {
                 border-width: 0.02rem;
                 background-color: var(--bg);
               font-size: var(--font-s);
-              line-height: 1.3em;
+              line-height: 2em;
               position: sticky;
               inset-block-start: 5vh;
               margin-block-end: var(--spacing-s);
@@ -190,9 +191,8 @@ article {
             
 
             #starter {
-                font-size: var(--font-m);
                 padding-block-start: var(--spacing-s);
-                line-height: 1.1em;   
+                color: #003CFF;  
               
         }
 
@@ -206,8 +206,11 @@ article {
             margin-block-end: var(--spacing-m);
             margin-inline-start: var(--spacing-m);
            section{
-             border-block-end: solid rgb(203, 203, 203);
-            border-width: 0.02rem;
+                position: sticky;
+                inset-block-start: 8vh;
+                border-block-end: solid rgb(203, 203, 203);
+                border-width: 0.02rem;
+                background-color: rgb(241, 241, 241);
             
            }
             h4, p:not(.ui) {
@@ -225,7 +228,7 @@ article {
 
             #quote{
                 padding-block-start: var(--spacing-s);
-                color: black;
+                color: #003CFF; 
             }
 
 
