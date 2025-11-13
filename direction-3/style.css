@@ -3,7 +3,7 @@
 
 :root{
     --white: rgb(255, 255, 255);
-    --grey:rgb(198, 198, 198);
+    --grey:rgb(232, 232, 232);
     --black: #000000;
     --highlight: rgb(136, 136, 136);
     --spacing-s: 1rem;
@@ -18,7 +18,9 @@
 
 body{
 
-     nav, footer{
+     nav{
+        position: absolute;
+        bottom:0;
         background-color:var(--white);
     }
     font-family: "Work Sans", sans-serif;    
@@ -226,8 +228,8 @@ article {
     sup{
         font-size: calc(var(--font-s)*0.8);
         font-weight: 700;
-        background-color: var(--black);
-        color: var(--red);
+        background-color: var(--highlight);
+        color: var(--white);
         vertical-align: super;
         padding-inline: 0.3em;
 
