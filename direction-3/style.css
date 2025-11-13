@@ -11,7 +11,7 @@
     --spacing-l: 4rem;
     --font-s: 1rem;
     --font-m: 1.4rem;
-    --font-l: 3rem;
+    --font-l: 2.6rem;
     font-size: 120%;
     line-height: 1.6rem;
 }
@@ -81,29 +81,18 @@ body{
                      display: grid;
                      grid-template-columns: repeat(12, 1fr);
      
-                     h1, h2,.originalarticle, p, section{
-                         grid-column: 3/ span 8;
+                     h1, h2, p, section{
+                         grid-column: 3/ span 6;
                      }
      
-                     aside{
-                         grid-column: 3/ span 5;
+                    aside{
+                         grid-column: 3/ span 4;
                      }
-                     blockquote, .examples {
+                    blockquote, .examples {
                         grid-column: 5/ span 6;
                      }
-     
-     
-                     .authornametime{
-     
-                         p{
-                             margin-block-end: 0;
-                         }
-                         
-                         display: block;
-                         grid-column: 2/ span 8;
-                     }
-     
-                      #ini{
+
+                    #ini{
                          grid-column: 3/ span 4;
                         
                      }   
@@ -180,30 +169,20 @@ article {
 
         blockquote{
             /* padding-block: var(--spacing-s); */
-            padding-block: var(--spacing-m);
+            padding-block: var(--spacing-s);
             margin-block-end: var(--spacing-s);
             background-color: var(--grey);
 
-            font-size: calc(var(--font-s)*0.7);
-            line-height: 1.3em;   
 
             h4, #quote, p,time{
 
-                padding-inline: var(--spacing-m);
+                padding-inline: var(--spacing-s);
             }
 
             h4, #quote{
                  margin-block-end: var(--spacing-s);
             }
 
-            h4{
-                font-size: var(--font-s);   
-            }
-
-            #quote{
-                font-size:calc(var(--font-s)*1.2) ;
-                line-height: 1.8rem; 
-            }
 
 
         }
