@@ -20,9 +20,12 @@ body{
     
     nav{
        position: fixed;
-       top: 90%;
+       top: 95%;
        right: 0;
        background-color:var(--white);
+       ol{
+        color: var(--black);
+       }
     }
 
     font-family: "Work Sans", sans-serif;    

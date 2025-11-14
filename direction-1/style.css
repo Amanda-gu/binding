@@ -80,12 +80,10 @@ body{
                      display: grid;
                      grid-template-columns: repeat(12, 1fr);
      
-                     h1, .originalarticle, p, section{
+                    h1, p, section{
                          grid-column: 3/ span 8;
                      }
-                     h1{
-                         grid-column: 1/ span 6;
-                     }
+                   
      
                      aside{
                          grid-column: 2/ span 5;
@@ -219,7 +217,7 @@ article {
               font-size: var(--font-m);
               line-height: 1.3em;
               position: sticky;
-              inset-block-start: 9vh;
+              inset-block-start: 5vh;
               padding: calc(var(--spacing-s)/2) ;
               margin-block-end: var(--spacing-m);
               background-color: var(--black);

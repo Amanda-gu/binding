@@ -11,30 +11,34 @@ body{
     /* background-color: var(--bg-color); */
 
     nav, footer {
+        font-family: Arial, Helvetica, sans-serif;
         position: sticky;
         inset-block-start: 0;
         background-color: black;
-        height: 10vh;
+        height: 5vh;
         z-index: 999;
+        display: flex;
+        align-items: center;
+        
         ol{
-            padding-block: 1rem;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: var(--spacing-s);
-            color: rgb(0, 0, 0);
-            justify-content: center;
+            column-gap: var(--spacing-s);
+            color: white;
+            justify-content: left;
             align-items: center;
+            /* text-align: center; */
 
 
             li {
-                background-color: var(--bg-color);
+                /* background-color: var(--bg-color); */
                 padding-inline: var(--spacing-s);
-                padding-block: 0.14rem;
+                /* padding-block: 0.14rem; */
             }
             
             li:hover{
-                color:var(--bg-color);
+                color:grey;
                 background-color: transparent;
             }
 
