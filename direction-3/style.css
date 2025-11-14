@@ -145,7 +145,7 @@ article {
             line-height: 1.3em;
             position: sticky;
             inset-block-start: 0vh;
-            margin-block-end: var(--spacing-m);
+            margin-block-end: var(--spacing-s);
             padding-block: var(--spacing-s);
             color: var(--black);
       
@@ -153,8 +153,7 @@ article {
 
     /* intro quote */
         #ini{
-            margin-block-end: var(--spacing-m);
-            margin-block-start: var(--spacing-s);
+            margin-block-start: var(--spacing-m);
         }
 
         #starter {
@@ -214,12 +213,6 @@ article {
 
 /* examples pulled from project1 */
     .examples {
-    
-    display: grid;
-
-    p {
-        transform: none;
-    }
 
     .examplesdes {
             font-size: 0.8rem;
