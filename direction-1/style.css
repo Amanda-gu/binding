@@ -244,7 +244,7 @@ article {
         }
 
 
-        blockquote{
+        blockquote, #panamaupdates{
             background-color: var(--black);
             color: var(--red);
 
@@ -321,42 +321,85 @@ article {
 
     }
 
-}
-
-/* 
-menu on top
-.sidebar {
-    top: var(--spacing-l);
-    line-height: 2rem;
-
-
-    section {
-        padding-inline: 1.5rem;
-        padding-block: 1.3rem;
-        border-radius: 0.4rem;
-
-        summary {
-                border-bottom: dotted;
-                border-color: black;
-                font-weight:700;
-                padding-block-end: 0.5rem;
-                margin-block-end: 1.5rem;
-            }
-            p {
-                text-indent: 1rem;
-            }
-
-            p:first-child {
-                padding-block-start:var(--spacing-s);
-                }
-
-        details:first-child {
-            margin-block-end: var(--spacing-s);
-        }
-       
-    }
-
+/* examples pulled from project1 */
+    .examples {
     
+        display: grid;
+
+        p {
+            transform: none;
+        }
+
+        .examplesdes {
+                font-size: 0.8rem;
+            }
+    /* soap example */
+
+        .soap {
+            display: grid;
+            
+            #soaproman, #soapfake, #soaptrue {
+            font-family: Helvetica, sans-serif;
+            font-size: 8rem;
+            line-height: 8rem; 
+            }
+            #soapfake {
+                transform: skew(-8deg);
+            }
+            #soaptrue {
+                font-style: bold italic;
+            }    
+        }
+        
+
+
+    /* five years later rotation example */
+
+
+        #fiveyearslaterreg{
+            font-family: "FiveYearsLater";
+            font-size: 6em;
+            line-height: 6rem;
+        }
+
+        #fiveyearslaterrotate{
+            font-family: "Five Years Later Rotated";
+            font-size: 6em;
+            line-height: 6rem;
+
+        }
+    
+
+    /* chinese example */
+
+    /* chinese fonts research https://gist.github.com/alex1504/112b462fbc08722a33a8915254410e22 */
+        #chineseitalic {
+            font-size:3em;
+            display: inline-block;
+            transform: skew(-7deg);
+        
+        }
+
+        #chinesekai {
+            /* font-family: "STHeiti"; */
+            alignment-baseline: central;
+            font-size:2em;
+
+        }
+
+    /* panama updates */
+        #panamaupdates{
+            font-size: 0.8rem;
+            padding-inline: 3ex;
+            padding-block: 2ex;
+            margin-inline-end: 0.2ex;
+            /* list style research: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style */
+            list-style: square inside;
+            line-height: 4ex;
+        }
+        
+
+    }
 }
- */
+
 

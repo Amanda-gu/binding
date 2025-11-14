@@ -47,8 +47,8 @@ body{
                  display: grid;
                  padding-inline: 5vw;       
      
-                 h1, h2, p, section{
-                         grid-column: 1/ span 4;
+                 h2, p, section{
+                         grid-column: 1/ span 5;
                      }
                  blockquote, aside {
                          grid-column: 2/ span 3;
@@ -84,13 +84,10 @@ body{
                      grid-template-columns: repeat(12, 1fr);
      
                     h1, h2, p, section{
-                         grid-column: 3/ span 6;
+                         grid-column: 3/ span 7;
                      }
      
-                    aside{
-                         grid-column: 8/ span 4;
-                     }
-                    blockquote, .examples {
+                    aside,blockquote, .examples {
                         grid-column: 5/ span 6;
                      }
 
@@ -193,7 +190,7 @@ article {
    
 
  /* citations */
-        aside {
+    aside {
             font-size: calc(var(--font-s)*0.8);
             line-height: 1.3em; 
         }
@@ -214,4 +211,86 @@ article {
 
     }
 
+
+/* examples pulled from project1 */
+    .examples {
+    
+    display: grid;
+
+    p {
+        transform: none;
+    }
+
+    .examplesdes {
+            font-size: 0.8rem;
+        }
+/* soap example */
+
+    .soap {
+        display: grid;
+        
+        #soaproman, #soapfake, #soaptrue {
+        font-family: Helvetica, sans-serif;
+        font-size: 8rem;
+        line-height: 8rem; 
+        }
+        #soapfake {
+            transform: skew(-8deg);
+        }
+        #soaptrue {
+            font-style: bold italic;
+        }    
+    }
+    
+
+
+/* five years later rotation example */
+
+
+    #fiveyearslaterreg{
+        font-family: "FiveYearsLater";
+        font-size: 6em;
+        line-height: 6rem;
+    }
+
+    #fiveyearslaterrotate{
+        font-family: "Five Years Later Rotated";
+        font-size: 6em;
+        line-height: 6rem;
+
+    }
+ 
+
+/* chinese example */
+
+/* chinese fonts research https://gist.github.com/alex1504/112b462fbc08722a33a8915254410e22 */
+    #chineseitalic {
+        font-size:3em;
+        display: inline-block;
+        transform: skew(-7deg);
+       
+    }
+
+    #chinesekai {
+        /* font-family: "STHeiti"; */
+        alignment-baseline: central;
+        font-size:2em;
+
+    }
+
+/* panama updates */
+
+    #panamaupdates{
+            font-size: 0.8rem;
+            padding-inline: 3ex;
+            padding-block: 2ex;
+            margin-inline-end: 0.2ex;
+            /* list style research: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style */
+            list-style: square inside;
+            line-height: 4ex;
+        }
+    }
+    
+
 }
+
