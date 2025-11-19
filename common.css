@@ -208,24 +208,24 @@ body{
 @keyframes headline {
 
         0% {
-            top:-10vh;
+            top:clamp(-10rem, -4vh, -2rem);
             font-variation-settings:
                 "BLED"  50,
-                "SCAN" -33;
+                "SCAN" -53;
         }
 
         50% {
-            top:10vh;
+            top:clamp(1rem, 4vh, 4rem);
             font-variation-settings:
                 "BLED"  50,
                 "SCAN" 100;
         }
 
         100% {
-            top:-10vh;
+            top:clamp(-10rem, -4vh, -2rem);
             font-variation-settings:
                 "BLED"  50,
-                "SCAN" -33;
+                "SCAN" -53;
         }
         
     }
