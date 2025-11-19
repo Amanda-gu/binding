@@ -10,16 +10,21 @@
     --spacing-m: 2rem;
     --spacing-l: 4rem;
     --font-s: 1rem;
-    --font-m: 1.4rem;
+    --font-m: 1.8rem;
     --font-l: 4rem;
+    line-height: 1.4rem;
 }
 
 
 body{
     background-color: var(--red);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
 
      @media (width > 980px) {
-        padding-inline: var(--spacing-s);
+        hgroup, p, ol {
+             padding-inline: 15vw;
+        }
+
      }
 
     
@@ -75,20 +80,21 @@ body{
             }
 /* squares on the margin */
 
-    
 
-
+    hgroup, p, ol {
+             padding-inline: 5vw;
+        }
     hgroup {
 
         color: var(--black);
 
         h1{
-            padding-inline: 5vw;
             font-family: "Sixtyfour", sans-serif;
             font-size: clamp(1rem, 11vw, 7rem);
             /* youtube: https://www.youtube.com/watch?v=G1buM51f09s */
             line-height: 140%;
-            margin-block: 8vh;
+            margin-block-start: 8vh;
+            margin-block-end: 5vh;
         }
 
 
@@ -114,35 +120,25 @@ body{
 
 
     #intro_description {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
-        padding-inline: 5vw;
-    }
-
-
-    nav{
-        padding-inline: var(--spacing-m);
-        font-family: "workbench", sans-serif;
-        position: sticky;
-        inset-block-start: 0;
-        background-color: black;
-        /* height: 5vh; */
-        z-index: 999;
-        display: flex;
-        align-items: center;
+        padding-block: var(--spacing-m);
+    }     
         
-        ol{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            column-gap: var(--spacing-s);
+    ol{
+            padding-block: var(--spacing-l);
             color: white;
+            background-color: black;
+
+            display: flex;
+            flex-direction: column;
+            row-gap: var(--spacing-s);
             justify-content: left;
-            align-items: center;
-            /* text-align: center; */
+            
 
 
             li {
-                padding-inline: 0.6rem;
+                font-family: "workbench", sans-serif;
+                font-size: var(--font-m);
+
             }
             
             li:hover{
@@ -150,14 +146,15 @@ body{
                 background-color: transparent;
             }
 
-        }
     }
+    
 
     footer{
-        color: var(--black);
-        background-color:var(--red);
+        hgroup{
+
+        }
         *{
-            padding-inline: var(--spacing-s);
+            padding: var(--spacing-s);
         }
     }
    
