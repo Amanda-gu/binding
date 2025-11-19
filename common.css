@@ -141,19 +141,19 @@ body{
 
 
         #type {
-            /* mix-blend-mode:color-dodge; */
-            font-variation-settings:
-                "BLED"  50,
-                "SCAN" -33;
             position: relative;
             top:0;
+            left: 20vw;
             animation-name: headline;
             animation-timing-function: linear;
-            animation-duration: 20s;
+            animation-duration: 30s;
             animation-iteration-count: infinite;
         }
 
         #darkroom {
+            font-variation-settings:
+                "BLED"  0,
+                "SCAN" -43;
             position: fixed;
             top:0;
         }
@@ -201,28 +201,28 @@ body{
         }
     }
    
-}
+
 
 
 
 @keyframes headline {
 
         0% {
-            top:-4vh;
+            top:-10vh;
             font-variation-settings:
                 "BLED"  50,
                 "SCAN" -33;
         }
 
         50% {
-            top:4vh;
+            top:10vh;
             font-variation-settings:
                 "BLED"  50,
                 "SCAN" 100;
         }
 
         100% {
-            top:-4vh;
+            top:-10vh;
             font-variation-settings:
                 "BLED"  50,
                 "SCAN" -33;
