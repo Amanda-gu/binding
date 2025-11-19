@@ -1,16 +1,33 @@
+/* wide: sixtyfour*/
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+/* narrow: workbench*/
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
 :root{
-    --bg-color: rgb(255, 255, 255);
+     --red: red;
+    --black: #000000;
+    --white: #f8f2f2;
     --spacing-s: 1rem;
     --spacing-m: 2rem;
-    --spacing-l: 3rem;
+    --spacing-l: 4rem;
+    --font-s: 1rem;
+    --font-m: 1.4rem;
+    --font-l: 4rem;
+
+    font-size: 120%;
+    line-height: 1.6rem;
 }
 
 
 body{
+    background-color: var(--red);
     /* padding: var(--spacing-s); */
     /* background-color: var(--bg-color); */
 
-    nav, footer {
+    nav{
         padding-inline: var(--spacing-m);
         font-family: Arial, Helvetica, sans-serif;
         position: sticky;
@@ -33,9 +50,7 @@ body{
 
 
             li {
-                /* background-color: var(--bg-color); */
                 padding-inline: 0.6rem;
-                /* padding-block: 0.14rem; */
             }
             
             li:hover{
@@ -48,6 +63,8 @@ body{
 
 
     footer{
+        color: var(--red);
+        background-color: black;
         *{
             padding-inline: var(--spacing-s);
         }
