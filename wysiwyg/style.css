@@ -1,0 +1,405 @@
+/* wide: sixtyfour*/
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+/* narrow: workbench*/
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@font-face {
+    font-family: 'Panama';
+	src: url('PanamaProportionalRegular.otf') format('opentype');
+}
+
+:root{
+    --red: red;
+    --black: #000000;
+    --spacing-s: 1rem;
+    --spacing-m: 2rem;
+    --spacing-l: 4rem;
+    --font-s: 1rem;
+    --font-m: 1.4rem;
+    --font-l: 4rem;
+    font-size: 120%;
+    line-height: 1.6rem;
+}
+
+body{
+    font-family: "Panama", sans-serif;     
+    background-color:var(--red);  
+
+/* page margin for desktop */
+     @media (width > 980px) {
+        padding-inline: var(--spacing-s);
+     }
+
+/* main content spacing & grid */
+    .content:not(#ini){
+                 padding-block-end: var(--spacing-l); 
+
+                 /* thank you google */
+                 p:not(blockquote p){
+                      margin-block-end: var(--spacing-m);
+                 }   
+             } 
+    .content, hgroup{
+     
+                 display: grid;
+                 padding-inline: 5vw;       
+     
+                 h1, h2, p, section{
+                         grid-column: 1/ span 6;
+                     }
+                 blockquote, aside {
+                         grid-column: 1/ span 6;
+                     }
+     
+                 .authornametime{
+     
+                         p{
+                             margin-block-end: 0;
+                         }
+                         
+                         display: block;
+                         grid-column: 2/ span 8;
+                     }
+     
+                 p, time, h1, h4{
+         
+                     max-width: 80ch; 
+                 }
+
+                 #starter{
+                     max-width: 35ch; 
+                 }
+
+
+    
+     
+/* desktop grid*/
+    @media (width > 980px) {
+                     display: grid;
+                     grid-template-columns: repeat(12, 1fr);
+     
+                    h1, p, section{
+                         grid-column: 3/ span 8;
+                     }
+                   
+     
+                     aside{
+                         grid-column: 2/ span 5;
+                     }
+                     blockquote, .examples {
+                        grid-column: 6/ span 6;
+                     }
+     
+     
+                     .authornametime{
+     
+                         p{
+                             margin-block-end: 0;
+                         }
+                         
+                         display: block;
+                         grid-column: 2/ span 8;
+                     }
+     
+                      #ini{
+                         grid-column: 3/ span 4;
+                        
+                     }   
+                 }
+                 
+             }
+    
+
+
+/* main content spacing & grid */
+
+/* squares on the margin */
+    canvas {
+                width: 5vw;
+                height: 1rem;
+                flex-shrink: 0;
+                background-color: var(--black);
+                position: fixed;
+
+            }
+
+    #square1{
+                top: 10vh;
+                left: 0;
+            }
+
+    #square2{
+                top: 10vh;
+                right: 0;
+            }
+
+    #square3{
+                bottom: 0;
+                left: 0;
+            }
+
+    #square4{
+                bottom: 0;
+                right: 0;
+            }
+
+
+    #square5{
+                top: 30vh;
+                left: 0;
+            }
+
+    #square6{
+                top: 30vh;
+                right: 0;
+            }
+
+    #square7{
+                bottom: 30vh;
+                left: 0;
+            }
+
+    #square8{
+                bottom: 30vh;
+                right: 0;
+            }
+/* squares on the margin */
+
+    
+
+
+
+article {
+  
+    padding-block-start: var(--spacing-s);
+    
+    /* article title style */
+        h1, h2{
+            font-family: "Workbench", sans-serif;   
+            font-variation-settings:
+                "BLED"  23,
+                "SCAN" 100;
+        }
+        
+        h1 {
+            border-block-end: solid var(--black);
+            border-width: 1rem;
+            margin-block-end: 0.4em;
+
+            font-size: var(--font-l); 
+            font-optical-sizing: auto;
+            line-height: 1.1em;   
+            font-variation-settings:
+                "BLED"  100,
+                "SCAN" 100;
+        }
+        
+        hgroup{
+
+            margin-block-end: var(--spacing-m);
+            #authorname{   
+                margin-block-end: var(--spacing-s);
+                font-size: var(--font-m);
+            }
+
+            section, a{
+                /* font-size: calc(var(--font-s)*0.8); */
+                line-height: 1.3em;   
+                margin-block-end: 1em;
+            }
+
+        }
+
+    /* section title style  */
+        section > h2 {
+              font-size: var(--font-m);
+              line-height: 1.3em;
+              position: sticky;
+              inset-block-start: 5vh;
+              padding: calc(var(--spacing-s)/2) ;
+              margin-block-end: var(--spacing-m);
+              background-color: var(--black);
+              color: var(--red);
+      
+          }
+
+    /* intro quote */
+        #quote, #starter, blockquote{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+        }
+        #ini{
+            margin-block-end: var(--spacing-m);
+            margin-block-start: var(--spacing-s);
+        }
+
+        #starter {
+            padding-block-end: var(--spacing-s);
+            font-size: calc(var(--font-l)*0.6);
+            line-height: 1.1em;            
+            font-variation-settings:
+                    "BLED"  0,
+                    "SCAN" 100;
+        }
+
+
+        blockquote, #panamaupdates{
+            background-color: var(--black);
+            color: var(--red);
+
+            margin-block-end: var(--spacing-m);
+
+            /* font-size: calc(var(--font-s)*0.7); */
+            line-height: 1.3em;   
+
+            h4, #quote, p,time{
+
+                padding-inline: var(--spacing-s);
+            }
+
+            h4, #quote{
+                margin-block-end: var(--spacing-s);
+                font-size: var(--font-s);   
+            }
+            h4{
+                font-family: "Workbench", sans-serif;
+            }
+
+            #quote{
+                line-height: 1.4em; 
+            }
+
+
+        }
+/* codepen example: https://codepen.io/Rybak/pen/eerXag */
+        blockquote:before, blockquote:after {
+            content: '';
+            display: block;
+            position: relative;
+            background-color: var(--black);
+            width: 1rem;
+            height: 1rem;
+             /* box-shadow: 40vw 0 0 0 var(--black); */
+            }
+        blockquote:before {
+            left: -1rem;
+            top: -1rem;
+            }
+        blockquote:after {
+            right: 1rem;
+            top: 1rem;
+            }
+
+        #extrainfo{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+            background-color: var(--black);
+            color: var(--red);
+        }
+
+   
+
+ /* citations */
+        aside {
+            font-size: calc(var(--font-s)*0.8);
+            line-height: 1.3em; 
+        }
+
+    }
+
+    em{
+        font-weight: 700;
+    }
+
+    sup{
+        font-size: calc(var(--font-s)*0.8);
+        font-weight: 700;
+        background-color: var(--black);
+        color: var(--red);
+        vertical-align: super;
+        padding-inline: 0.3em;
+
+    }
+
+/* examples pulled from project1 */
+    .examples {
+    
+        display: grid;
+
+        p {
+            transform: none;
+        }
+
+        .examplesdes {
+                font-size: 0.8rem;
+            }
+    /* soap example */
+
+        .soap {
+            display: grid;
+            
+            #soaproman, #soapfake, #soaptrue {
+            font-family: Helvetica, sans-serif;
+            font-size: 8rem;
+            line-height: 8rem; 
+            }
+            #soapfake {
+                transform: skew(-8deg);
+            }
+            #soaptrue {
+                font-style: bold italic;
+            }    
+        }
+        
+
+
+    /* five years later rotation example */
+
+
+        #fiveyearslaterreg{
+            font-family: "FiveYearsLater";
+            font-size: 6em;
+            line-height: 6rem;
+        }
+
+        #fiveyearslaterrotate{
+            font-family: "Five Years Later Rotated";
+            font-size: 6em;
+            line-height: 6rem;
+
+        }
+    
+
+    /* chinese example */
+
+    /* chinese fonts research https://gist.github.com/alex1504/112b462fbc08722a33a8915254410e22 */
+        #chineseitalic {
+            font-size:3em;
+            display: inline-block;
+            transform: skew(-7deg);
+        
+        }
+
+        #chinesekai {
+            /* font-family: "STHeiti"; */
+            alignment-baseline: central;
+            font-size:2em;
+
+        }
+
+    /* panama updates */
+        #panamaupdates{
+            font-size: 0.8rem;
+            padding-inline: 3ex;
+            padding-block: 2ex;
+            margin-inline-end: 0.2ex;
+            /* list style research: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style */
+            list-style: square inside;
+            line-height: 4ex;
+        }
+        
+
+    }
+}
+
+
