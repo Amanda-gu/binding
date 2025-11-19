@@ -132,7 +132,7 @@ body{
 
         h1{
             font-family: "Sixtyfour", sans-serif;
-            font-size: clamp(1rem, 11vw, 7rem);
+            font-size: clamp(1rem, 11vw, 6rem);
             /* youtube: https://www.youtube.com/watch?v=G1buM51f09s */
             line-height: 140%;
             margin-block-start: 8vh;
@@ -218,7 +218,7 @@ body{
             top:clamp(1rem, 4vh, 4rem);
             font-variation-settings:
                 "BLED"  50,
-                "SCAN" 100;
+                "SCAN" 70;
         }
 
         100% {
