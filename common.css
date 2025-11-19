@@ -26,7 +26,49 @@ body{
         }
 
      }
-
+/* desktop grid*/
+    @media (width > 980px) {
+                     display: grid;
+                     grid-template-columns: repeat(12, 1fr);
+                    
+                    hgroup {
+                        grid-column: 1/ span 8;
+                    }
+                    ol{
+                         grid-column: 2/ span 10;
+                    
+                     }
+     
+                    p, section, footer{
+                         grid-column: 3/ span 8;
+                     }
+                   
+     
+                    aside{
+                         grid-column: 2/ span 5;
+                     }
+                    blockquote, .examples {
+                        grid-column: 6/ span 6;
+                     }
+     
+     
+                    .authornametime{
+     
+                         p{
+                             margin-block-end: 0;
+                         }
+                         
+                         display: block;
+                         grid-column: 2/ span 8;
+                     }
+     
+                    #ini{
+                         grid-column: 3/ span 4;
+                        
+                     }   
+                 }
+                 
+             }
     
 /* squares on the margin */
     canvas {
@@ -125,12 +167,12 @@ body{
         
     ol{
             padding-block: var(--spacing-l);
-            color: white;
+            color: var(--red);
             background-color: black;
 
             display: flex;
             flex-direction: column;
-            row-gap: var(--spacing-s);
+            row-gap: 1.5rem;
             justify-content: left;
             
 
@@ -142,8 +184,9 @@ body{
             }
             
             li:hover{
-                color:grey;
-                background-color: transparent;
+                font-variation-settings:
+                "BLED"  80,
+                "SCAN" 20;
             }
 
     }
