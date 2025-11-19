@@ -26,7 +26,7 @@ body{
 /* squares on the margin */
     canvas {
                 width: 5vw;
-                height: 1rem;
+                height: 3vh;
                 flex-shrink: 0;
                 background-color: var(--black);
                 position: fixed;
@@ -86,6 +86,7 @@ body{
             padding-inline: 5vw;
             font-family: "Sixtyfour", sans-serif;
             font-size: clamp(1rem, 11vw, 7rem);
+            /* youtube: https://www.youtube.com/watch?v=G1buM51f09s */
             line-height: 140%;
             margin-block: 8vh;
         }
