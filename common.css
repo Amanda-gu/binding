@@ -17,11 +17,12 @@
 
 
 body{
+    overflow-x: hidden;
     background-color: var(--red);
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
 
      @media (width > 980px) {
-        hgroup, p, ol {
+        hgroup, footer, section, ol {
              padding-inline: 15vw;
         }
 
@@ -123,8 +124,8 @@ body{
 /* squares on the margin */
 
 
-    hgroup, p, ol {
-             padding-inline: 5vw;
+    hgroup, section, footer, ol {
+        padding-inline: 5vw;
         }
     hgroup {
 
@@ -143,7 +144,6 @@ body{
         #type {
             position: relative;
             top:0;
-            left: 20vw;
             animation-name: headline;
             animation-timing-function: linear;
             animation-duration: 30s;
@@ -154,7 +154,7 @@ body{
             font-variation-settings:
                 "BLED"  0,
                 "SCAN" -43;
-            position: fixed;
+            position: absolute;
             top:0;
         }
 
@@ -172,33 +172,42 @@ body{
 
             display: flex;
             flex-direction: column;
-            row-gap: 1.5rem;
+            row-gap: var(--spacing-s);
             justify-content: left;
             
 
 
             li {
                 font-family: "workbench", sans-serif;
-                font-size: var(--font-m);
+                 font-variation-settings:
+                "BLED"  0,
+                "SCAN" 0;
+                font-size: 3rem;
+                line-height: 3rem;
 
             }
             
             li:hover{
                 font-variation-settings:
-                "BLED"  80,
-                "SCAN" 20;
+                "BLED"  20,
+                "SCAN" -50;
             }
 
     }
     
 
     footer{
-        hgroup{
+        margin-block: var(--spacing-m);
 
+        hgroup {
+            padding: 0;
+
+            font-family: "Sixtyfour", sans-serif;
+            display: flex;
+            flex-direction: row;
+            column-gap: var(--spacing-s);
         }
-        *{
-            padding: var(--spacing-s);
-        }
+       
     }
    
 
@@ -208,21 +217,21 @@ body{
 @keyframes headline {
 
         0% {
-            top:clamp(-10rem, -4vh, -2rem);
+            top:clamp(-10rem, -5vh, -2rem);
             font-variation-settings:
                 "BLED"  50,
                 "SCAN" -53;
         }
 
         50% {
-            top:clamp(1rem, 4vh, 4rem);
+            top:clamp(1rem, 5vh, 4rem);
             font-variation-settings:
                 "BLED"  50,
                 "SCAN" 70;
         }
 
         100% {
-            top:clamp(-10rem, -4vh, -2rem);
+            top:clamp(-10rem, -5vh, -2rem);
             font-variation-settings:
                 "BLED"  50,
                 "SCAN" -53;
