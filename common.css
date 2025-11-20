@@ -91,7 +91,7 @@ body{
                          grid-column: 2/ span 8;
                      }
      
-                    #ini{
+                    #intro{
                          grid-column: 3/ span 4;
                         
                      }   
@@ -149,6 +149,7 @@ body{
                 bottom: 30vh;
                 right: 0;
             }
+
 /* squares on the margin */
     
 /* paragraph block spacing */
@@ -394,7 +395,24 @@ blockquote, #panamaupdates{
 
     }
     
-    
+    /* intro quote */
+
+    #intro{
+            margin-block-end: var(--spacing-m);
+            margin-block-start: var(--spacing-s);
+        }
+
+    #starter {
+            padding-block-end: var(--spacing-s);
+            font-size: calc(var(--font-l)*0.6);
+            line-height: 1.1em;            
+            font-variation-settings:
+                    "BLED"  0,
+                    "SCAN" 100;
+        }
+
+
+/* blockquote */
     blockquote, #panamaupdates{
             background-color: var(--black);
             color: var(--red);
