@@ -98,6 +98,9 @@ body{
                  }
                  
              }
+
+
+/* body end */
     
 /* squares on the margin */
     canvas {
@@ -237,6 +240,10 @@ body{
         }
 
     }
+/* intro paragraph on homepage */
+    #intro_description {
+        padding-block-start: var(--spacing-m);
+    }  
 /* single page title style */
     .pagehgroup{
         margin-block: var(--spacing-m);
@@ -286,9 +293,6 @@ body{
         inset-block-start: var(--sticky-inset);
     }
 
-    #intro_description {
-        padding-block-start: var(--spacing-m);
-    }     
         
     .readinglist{
             padding-block: var(--spacing-l);
@@ -367,7 +371,7 @@ blockquote, #panamaupdates{
             }
 
     }
-
+/* about author */
     #extrainfo{
         padding-block: var(--spacing-s);
         background-color: var(--black);
@@ -394,8 +398,16 @@ blockquote, #panamaupdates{
 
 
     }
-    
-    /* intro quote */
+
+/* citations */
+        aside {
+            font-size: calc(var(--font-s)*0.8);
+            line-height: 1.3em; 
+        }
+
+
+
+/* intro quote */
 
     #intro{
             margin-block-end: var(--spacing-m);
@@ -410,6 +422,24 @@ blockquote, #panamaupdates{
                     "BLED"  0,
                     "SCAN" 100;
         }
+
+
+
+/* character styles */
+    em{
+        font-weight: 700;
+    }
+
+    sup{
+        font-size: calc(var(--font-s)*0.8);
+        font-weight: 700;
+        background-color: var(--black);
+        color: var(--red);
+        vertical-align: super;
+        padding-inline: 0.3em;
+
+    }
+
 
 
 /* blockquote */
@@ -471,10 +501,12 @@ blockquote, #panamaupdates{
         }
        
     }
+
+
    
 
 
-
+/* animation on homepage */
 
 @keyframes headline {
 
