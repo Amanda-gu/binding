@@ -24,7 +24,7 @@ body{
     } 
 
      @media (width > 980px) {
-        hgroup, footer, section, ol {
+        hgroup, footer, section, .readinglist {
              padding-inline: 0vw;
         }
      }
@@ -37,11 +37,11 @@ body{
                 hgroup{
                     grid-column: 3/ span 10;
                 }
-                ol{
+                .readinglist{
                     grid-column: 1/ span 12;
                 }
 
-                ol, hgroup{
+                .readinglist, hgroup{
                     display: grid;
                     grid-template-columns: repeat(12, 1fr);
 
@@ -173,7 +173,7 @@ body{
                  
     }
 
-    hgroup, section, footer, ol {
+    hgroup, section, footer, .readinglist {
         padding-inline: 5vw;
         }
     hgroup {
@@ -214,7 +214,7 @@ body{
         padding-block: var(--spacing-m);
     }     
         
-    ol{
+    .readinglist{
             padding-block: var(--spacing-l);
             color: var(--red);
             background-color: black;
