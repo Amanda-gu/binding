@@ -369,6 +369,9 @@ blockquote, #panamaupdates{
 
     #extrainfo{
         padding-block: var(--spacing-s);
+        background-color: var(--black);
+        color: var(--red);
+
         h4 {
             text-transform: uppercase;
             background-color: var(--red);
