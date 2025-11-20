@@ -12,6 +12,7 @@
     --font-m: 1.4rem;
     --font-l: 3rem;
     --page-padding:5vw;
+    --sticky-inset:3.3rem;
     line-height: 1.4rem;
     font-size: 120%;
 }
@@ -24,7 +25,7 @@ nav {
         background-color: var(--black);
         color: var(--red);
         padding-inline: var(--page-padding);
-        padding-block: calc(var(--spacing-m)/2);
+        padding-block: var(--spacing-s);
         z-index: 999;
         border-bottom: solid var(--red) 0.02rem;
             
@@ -151,7 +152,7 @@ body{
 /* squares on the margin */
     
 /* paragraph block spacing */
-    .content:not(#intro){
+    .content:not(#intro, #extrainfo){
                  padding-block-end: var(--spacing-m); 
             /* thank you google */
                  p:not(blockquote p){
@@ -237,8 +238,9 @@ body{
     }
 /* single page title style */
     .pagehgroup{
-        margin-block: var(--spacing-s);
-        inset-block-start: 3.3rem;
+        margin-block: var(--spacing-m);
+        margin-block-end: var(--spacing-l);
+        inset-block-start: var(--sticky-inset);
         padding-inline: var(--page-padding);
         h1 {
             font-family: "Workbench", sans-serif;
@@ -280,7 +282,7 @@ body{
 
     h2.headings {
         position: sticky;
-        inset-block-start: 2.3rem;
+        inset-block-start: var(--sticky-inset);
     }
 
     #intro_description {
@@ -364,6 +366,30 @@ blockquote, #panamaupdates{
             }
 
     }
+
+    #extrainfo{
+        padding-block: var(--spacing-s);
+        h4 {
+            text-transform: uppercase;
+            background-color: var(--red);
+            color: var(--black);
+            font-size: 0.8rem;
+            /* border-block-end: solid var(--red);
+            border-width: 1rem; */
+            margin-block-end: 0.4rem;
+        }
+        h4, p, ul{
+            padding-inline: var(--spacing-s);
+        }
+
+        section:first-child{
+            padding-block-end: var(--spacing-s);
+        }
+
+
+
+
+    }
     
     
     blockquote, #panamaupdates{
@@ -375,16 +401,16 @@ blockquote, #panamaupdates{
             /* font-size: calc(var(--font-s)*0.7); */
             line-height: 1.3em;   
 
-            h4, #quote, p,time{
+            h3, #quote, p,time{
 
                 padding-inline: var(--spacing-s);
             }
 
-            h4, #quote{
+            h3, #quote{
                 margin-block-end: var(--spacing-s);
                 font-size: var(--font-s);   
             }
-            h4{
+            h3{
                 font-family: "Workbench", sans-serif;
             }
 
@@ -393,7 +419,7 @@ blockquote, #panamaupdates{
             }
     }
 /* codepen example: https://codepen.io/Rybak/pen/eerXag */
-    #intro_description:before, #intro_description:after, blockquote:before, blockquote:after {
+    #extrainfo:before, #extrainfo:after, #intro_description:before, #intro_description:after, blockquote:before, blockquote:after {
             content: '';
             display: block;
             position: relative;
@@ -402,11 +428,11 @@ blockquote, #panamaupdates{
             height: 1rem;
              /* box-shadow: 40vw 0 0 0 var(--black); */
             }
-    #intro_description:before, blockquote:before {
+    #extrainfo:before, #intro_description:before, blockquote:before {
             left: -1rem;
             top: -1rem;
             }
-    #intro_description:after, blockquote:after {
+    #extrainfo:after, #intro_description:after, blockquote:after {
             right: 1rem;
             top: 1rem;
             }
