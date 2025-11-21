@@ -49,47 +49,42 @@ body{
 /* desktop grid*/
 
     @media (width > 980px) {
-             padding-inline: 0;
+
             display: grid;
             grid-template-columns: repeat(12, 1fr);
+
             .pagenav{
                 grid-column: 1/ span 12;
             }
-                  
-                hgroup{
-                    grid-column: 3/ span 10;
-                }
-                .readinglist{
+                
+            .readinglist{
                     grid-column: 1/ span 12;
+            }
+     
+            hgroup, section, footer{
+                grid-column: 3/ span 6;
+            }
+  
+            aside{
+                grid-column: 2/ span 5;
+            }
+            blockquote, .examples {
+                grid-column: 6/ span 6;
+            }
+
+            .authornametime{
+     
+                p{
+                    margin-block-end: 0;
                 }
-     
-                section, footer{
-                        grid-column: 3/ span 6;
-                }
-                   
-     
-                 aside{
-                         grid-column: 2/ span 5;
-                     }
-                    blockquote, .examples {
-                        grid-column: 6/ span 6;
-                     }
-     
-     
-                    .authornametime{
-     
-                         p{
-                             margin-block-end: 0;
-                         }
                          
-                         display: block;
-                         grid-column: 2/ span 8;
-                     }
+                display: block;
+                grid-column: 2/ span 8;
+            }
      
-                    #intro{
-                         grid-column: 3/ span 4;
-                        
-                     }   
+            #intro{
+                grid-column: 3/ span 4;                    
+            }   
      }
                  
 }
@@ -108,21 +103,15 @@ body{
              } 
 /* page grid */
     .content{
-                 h1, h2, p, section{
+                hgroup, h2, p, section{
                          grid-column: 1/ span 6;
                      }
-
-                h1{
-                    grid-column: 3/ span 6;
-                }
-                      
-                    
-     
-                 blockquote, aside {
+       
+                blockquote, aside {
                          grid-column: 1/ span 6;
                      }
      
-                 .authornametime{
+                .authornametime{
      
                          p{
                              margin-block-end: 0;
@@ -132,14 +121,13 @@ body{
                          grid-column: 2/ span 8;
                      }
      
-                 p, time, h1, h4{
-         
-                     max-width: 80ch; 
-                 }
+                p, time, h1{
+                    max-width: 80ch; 
+                }
 
-                 #starter{
-                     max-width: 35ch; 
-                 }
+                #starter{
+                    max-width: 35ch; 
+                }
                  
     }
 
@@ -267,7 +255,7 @@ body{
     }
 /* about author */
     #extrainfo{
-        padding-block: var(--spacing-s);
+        /* padding-block: var(--spacing-s); */
         background-color: var(--red);
         color: var(--black);
 
