@@ -193,6 +193,9 @@ body{
         inset-block-start: var(--sticky-inset);
         h1 {
             font-family: "Workbench", sans-serif;
+            font-variation-settings:
+                "BLED"  0,
+                "SCAN" 20;
             margin-block: var(--spacing-s);
             color: var(--black);
             font-size: var(--font-l); 
@@ -260,9 +263,9 @@ body{
             }
             li {
                 font-family: "workbench", sans-serif;
-                 font-variation-settings:
+                font-variation-settings:
                 "BLED"  0,
-                "SCAN" 0;
+                "SCAN" 20;
                 font-size: 2.4rem;
                 line-height: 2.6rem;
 
@@ -278,17 +281,21 @@ body{
     }
 /* about author */
     #extrainfo{
-        /* padding-block: var(--spacing-s); */
+        .darklight
+            {
+            background: var(--black);
+            display: inline;
+            }
         background-color: var(--red);
         color: var(--black);
 
         h4 {
             text-transform: uppercase;
-            background-color: var(--black);
+            /* background-color: var(--black); */
             color: var(--red);
             font-size: 0.8rem;
-            /* border-block-end: solid var(--red);
-            border-width: 1rem; */
+            border-block-end: solid var(--black);
+            border-width: 0.08rem;
             margin-block-end: 0.4rem;
         }
         h4, p, ul{
@@ -302,10 +309,10 @@ body{
     }
 
 /* citations */
-        aside {
-            font-size: var(--font-xs);
-            line-height: 1.3em; 
-        }
+    aside {
+        font-size: var(--font-xs);
+        line-height: 1.3em; 
+    }
 
 
 
@@ -362,6 +369,9 @@ body{
             }
             h3{
                 font-family: "Workbench", sans-serif;
+                font-variation-settings:
+                "BLED"  0,
+                "SCAN" 20;
                 color: var(--red);
             }
 
@@ -440,6 +450,7 @@ body{
     /* squares on the margin */
     canvas {
                 width: var(--page-padding);
+                max-width: 1.8rem;
                 height: 3vh;
                 flex-shrink: 0;
                 background-color: var(--red);
