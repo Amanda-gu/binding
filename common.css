@@ -13,7 +13,7 @@
     --font-m: 1.4rem;
     --font-l: 3rem;
     --page-padding:5vw;
-    --sticky-inset:3.3rem;
+    --sticky-inset:2.6rem;
     line-height: 1.4rem;
     font-size: 120%;
 }
@@ -23,12 +23,12 @@
 .pagenav {
         position: sticky;
         inset-block-start: 0;
-        background-color: var(--red);
-        color: var(--black);
+        background-color: var(--black);
+        color: var(--red);
         padding-inline: var(--page-padding);
-        padding-block: var(--spacing-s);
+        padding-block: 0.6rem;
         z-index: 999;
-        border-bottom: solid var(--black) 0.02rem;
+        border-bottom: solid var(--red) 0.02rem;
             
         p{
             font-family: "Sixtyfour", sans-serif;
