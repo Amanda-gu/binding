@@ -2,7 +2,7 @@
 
 
 :root{
-     --red: red;
+    --red: red;
     --black: #000000;
     --white: #f8f2f2;
     --spacing-s: 1rem;
@@ -22,12 +22,12 @@
 nav {
         position: sticky;
         inset-block-start: 0;
-        background-color: var(--black);
-        color: var(--red);
+        background-color: var(--red);
+        color: var(--black);
         padding-inline: var(--page-padding);
         padding-block: var(--spacing-s);
         z-index: 999;
-        border-bottom: solid var(--red) 0.02rem;
+        border-bottom: solid var(--black) 0.02rem;
             
         p{
             font-family: "Sixtyfour", sans-serif;
@@ -38,7 +38,8 @@ nav {
 
 body{
     overflow-x: hidden;
-    background-color: var(--red);
+    color: var(--red);
+    background-color: var(--black);
     font-family: 'Arial Narrow', sans-serif; 
     p{
         max-width: 80ch;
@@ -107,7 +108,7 @@ body{
                 width: var(--page-padding);
                 height: 3vh;
                 flex-shrink: 0;
-                background-color: var(--black);
+                background-color: var(--red);
                 position: fixed;
 
             }
@@ -207,7 +208,7 @@ body{
 
 
     h1{
-        color: var(--black);
+        color: var(--red);
     }
 /* homepage title style */
     .homehgroup {
@@ -252,7 +253,7 @@ body{
         padding-inline: var(--page-padding);
         h1 {
             font-family: "Workbench", sans-serif;
-            border-block-end: solid var(--black);
+            border-block-end: solid var(--red);
             border-width: 1rem;
             margin-block: var(--spacing-s);
 
@@ -283,8 +284,8 @@ body{
               padding: calc(var(--spacing-s)/2);
               padding-inline: var(--page-padding);
               margin-block-end: var(--spacing-m);
-              background-color: var(--black);
-              color: var(--red);
+              background-color: var(--red);
+              color: var(--black);
       
           }
 
@@ -297,8 +298,8 @@ body{
     .readinglist{
             padding-block: var(--spacing-l);
             padding-inline: var(--page-padding);
-            color: var(--red);
-            background-color: black;
+            color: var(--black);
+            background-color: var(--red);
 
             display: flex;
             flex-direction: column;
@@ -374,13 +375,13 @@ blockquote, #panamaupdates{
 /* about author */
     #extrainfo{
         padding-block: var(--spacing-s);
-        background-color: var(--black);
-        color: var(--red);
+        background-color: var(--red);
+        color: var(--black);
 
         h4 {
             text-transform: uppercase;
-            background-color: var(--red);
-            color: var(--black);
+            background-color: var(--black);
+            color: var(--red);
             font-size: 0.8rem;
             /* border-block-end: solid var(--red);
             border-width: 1rem; */
@@ -433,8 +434,8 @@ blockquote, #panamaupdates{
     sup{
         font-size: calc(var(--font-s)*0.8);
         font-weight: 700;
-        background-color: var(--black);
-        color: var(--red);
+        background-color: var(--red);
+        color: var(--black);
         vertical-align: super;
         padding-inline: 0.3em;
 
