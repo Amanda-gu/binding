@@ -2,8 +2,8 @@
 
 
 :root{
-    --red: red;
-    --black: #000000;
+    --bg-color: rgb(0, 0, 0);
+    --accent-color: #ff0000;
     --white: #f8f2f2;
     --spacing-s: 1rem;
     --spacing-m: 2rem;
@@ -23,12 +23,12 @@
 .pagenav {
         position: sticky;
         inset-block-start: 0;
-        background-color: var(--black);
-        color: var(--red);
+        background-color: var(--bg-color);
+        color: var(--accent-color);
         padding-inline: var(--page-padding);
         padding-block: 0.6rem;
         z-index: 999;
-        border-bottom: solid var(--red) 0.02rem;
+        border-bottom: solid var(--accent-color) 0.02rem;
             
         p{
             font-family: "Sixtyfour", sans-serif;
@@ -39,8 +39,8 @@
 
 body{
     overflow-x: hidden;
-    color: var(--red);
-    background-color: var(--black);
+    color: var(--bg-color);
+    background-color: var(--accent-color);
     font-family: 'Arial Narrow', sans-serif; 
     display: grid;
     p{
@@ -54,8 +54,12 @@ body{
             display: grid;
             grid-template-columns: repeat(12, 1fr);
 
-            .pagenav, .readinglist, .homehgroup{
+            .pagenav, .readinglist{
                 grid-column: 1/ span 12;
+            }
+
+            .homehgroup{
+                grid-column: 2/ span 12;
             }
      
             .pagehgroup, section, footer{
@@ -110,7 +114,6 @@ body{
 /* paragraph block spacing */
     .content:not(#intro, #extrainfo){
                  padding-block-end: var(--spacing-m); 
-            /* i will never remember selecors */
                  p:not(blockquote p):not(#intro_description){
                       margin-block-end: var(--spacing-m);
                  }   
@@ -147,7 +150,10 @@ body{
 
 /* homepage title style */
     h1{
-        color: var(--red);
+        color: var(--bg-color);
+    }
+    h1, h2, .readinglist, summary{
+        text-transform: uppercase;
     }
     .homehgroup {
         font-family: "Sixtyfour", sans-serif;
@@ -168,6 +174,7 @@ body{
             animation-timing-function: linear;
             animation-duration: 30s;
             animation-iteration-count: infinite;
+            text-align: center;
         }
 
         #darkroom {
@@ -197,7 +204,7 @@ body{
                 "BLED"  0,
                 "SCAN" 20;
             margin-block: var(--spacing-s);
-            color: var(--black);
+            color: var(--accent-color);
             font-size: var(--font-l); 
             font-optical-sizing: auto;
             padding-block: var(--spacing-s);
@@ -223,8 +230,8 @@ body{
             padding-block: calc(var(--spacing-s)/2);
             padding-inline: var(--page-padding);
             margin-block-end: var(--spacing-m);
-            color: var(--black);
-            background-color: var(--black);
+            color: var(--accent-color);
+            background-color: var(--accent-color);
     
           }
 
@@ -234,15 +241,12 @@ body{
     }
 
     .pagehgroup, .headings{
-        .highlight {
-                background: var(--red);
-                display: inline;
-            }
-        border-block-end: solid var(--red);
+
+        border-block-end: solid var(--bg-color);
         border-width: 0.05rem;
         line-height: 1em;   
         h1{
-            border-block-end: solid var(--red);
+            border-block-end: solid var(--bg-color);
             border-width: 0.05rem;
             line-height: 1em;   
         }
@@ -251,51 +255,113 @@ body{
             padding-inline: 0;
         }
     }
+/* svg arrow */
 
-        
+    svg{
+        fill: var(--accent-color);
+        width:1.8rem; 
+        height:1.8rem; 
+        rect{
+            border-radius: 10rem;
+            }
+        }   
+/* TOC */        
     .readinglist{
             padding-block: var(--spacing-m);
-            color: var(--black);
-            background-color: var(--red);
+            color: var(--accent-color);
+            background-color: var(--bg-color);
 
             summary, li{
                 padding-block-end: var(--spacing-s);
             }
+            summary {
+                text-transform: uppercase;
+                color: var(--bg-color);
+                margin-block-end: 0.4rem;
+            }
             li {
                 font-family: "workbench", sans-serif;
-                font-variation-settings:
-                "BLED"  0,
-                "SCAN" 20;
-                font-size: 2.4rem;
-                line-height: 2.6rem;
 
+                font-size: 2.4rem;
+                line-height: 2.4rem;
+
+                a{
+                    display: inline-flex;
+                    align-items: center;
+                    column-gap: var(--spacing-s);
+                }
+            }
+            
+
+            li:nth-child(2){
+                 font-variation-settings:
+                "SCAN" -53;
+                svg {
+                    rect{
+                        height: 0.08rem;
+                    }
+                }
+
+            }
+            li:nth-child(3){
+                 font-variation-settings:
+                "SCAN" -20;
+
+                svg {
+                    rect{
+                        height: 0.2rem;
+                    }
+                }
+            }
+
+            li:nth-child(4){
+                 font-variation-settings:
+                "SCAN" 10;
+
+                svg {
+                    rect{
+                        height: 0.4rem;
+                    }
+                }
             }
             
             li:hover{
                 font-variation-settings:
-                "BLED"  20,
-                "SCAN" -50;
+                "BLED"  0,
+                "SCAN" -40;
+
+                svg {
+                    rect{
+                        height: 0.15rem;
+                    }
+                }
             }
+
 
 
     }
-/* about author */
-    #extrainfo{
-        .darklight
+/* text bg */   
+    .highlight {
+                background: var(--bg-color);
+                display: inline;
+            }
+
+    .darklight
             {
-            background: var(--black);
+            background: var(--accent-color);
             display: inline;
             }
-        background-color: var(--red);
-        color: var(--black);
+/* about author */
+    #extrainfo{
+    
+        background-color: var(--bg-color);
+        color: var(--accent-color);
         
 
         h4 {
             text-transform: uppercase;
-            color: var(--red);
-            font-size: 0.8rem;
-            border-block-end: solid var(--black);
-            border-width: 0.08rem;
+            color: var(--bg-color);
+            font-size: var(--font-xs);
             margin-block-end: 0.4rem;
         }
         h4, p, ul{
@@ -342,8 +408,8 @@ body{
     sup{
         font-size: var(--font-xs);
         font-weight: 700;
-        background-color: var(--red);
-        color: var(--black);
+        background-color: var(--bg-color);
+        color: var(--accent-color);
         vertical-align: super;
         padding-inline: 0.3em;
 
@@ -352,9 +418,9 @@ body{
 
 
 /* blockquote */
-    blockquote, #panamaupdates{
-            background-color: var(--red);
-            color: var(--black);
+    blockquote{
+            background-color: var(--bg-color);
+            color: var(--accent-color);
 
             margin-block-end: var(--spacing-m);
             line-height: 1.3em;   
@@ -372,7 +438,7 @@ body{
                 font-variation-settings:
                 "BLED"  0,
                 "SCAN" 20;
-                color: var(--red);
+                color: var(--bg-color);
             }
 
             #quote{
@@ -384,10 +450,10 @@ body{
             content: '';
             display: block;
             position: relative;
-            background-color: var(--red);
+            background-color: var(--bg-color);
             width: 1rem;
             height: 1rem;
-             /* box-shadow: 40vw 0 0 0 var(--black); */
+             /* box-shadow: 40vw 0 0 0 var(--accent-color); */
             }
     #extrainfo:before, #intro_description:before, blockquote:before {
             left: -1rem;
@@ -415,7 +481,6 @@ body{
     }
 
 
-   
 
 
 /* animation on homepage */
@@ -453,7 +518,7 @@ body{
                 max-width: 1.8rem;
                 height: 3vh;
                 flex-shrink: 0;
-                background-color: var(--red);
+                background-color: var(--bg-color);
                 position: fixed;
 
             }

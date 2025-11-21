@@ -1,0 +1,61 @@
+    
+    h1{
+        font-variation-settings:
+                "SCAN" 10;
+    }
+
+
+    @media (width > 980px) {
+        h1{
+            font-size: 6rem;
+        }
+    }
+
+    
+
+
+
+            /* li:nth-child(2){
+                 font-variation-settings:
+                "SCAN" -53;
+                svg {
+                    rect{
+                        height: 0.08rem;
+                    }
+                }
+
+            }
+            li:nth-child(3){
+                 font-variation-settings:
+                "SCAN" -20;
+
+                svg {
+                    rect{
+                        height: 0.2rem;
+                    }
+                }
+            }
+
+            li:nth-child(4){
+                 font-variation-settings:
+                "SCAN" 10;
+
+                svg {
+                    rect{
+                        height: 0.4rem;
+                    }
+                }
+            }
+            
+            li:hover{
+                font-variation-settings:
+                "BLED"  0,
+                "SCAN" -40;
+
+                svg {
+                    rect{
+                        height: 0.15rem;
+                    }
+                }
+            }
+ */
