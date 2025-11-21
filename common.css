@@ -90,14 +90,14 @@ body{
 /* body end */
 
 /* page paddings */
-    .content, .pagehgroup, footer{
+    .content, .pagehgroup, footer, .readinglist{
         padding-inline: var(--page-padding);
         @media (width > 980px) {
             padding-inline:0;
         }
     }
-    .readinglist{
-        
+    .readinglist{      
+       
         @media (width > 980px) {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
@@ -110,8 +110,8 @@ body{
 /* paragraph block spacing */
     .content:not(#intro, #extrainfo){
                  padding-block-end: var(--spacing-m); 
-            /* thank you google */
-                 p:not(blockquote p){
+            /* i will never remember selecors */
+                 p:not(blockquote p):not(#intro_description){
                       margin-block-end: var(--spacing-m);
                  }   
              } 
@@ -181,7 +181,7 @@ body{
     }
 /* intro paragraph on homepage */
     #intro_description {
-        padding-block-start: var(--spacing-m);
+        padding-block-start: var(--spacing-s);
     }  
 
 
@@ -251,19 +251,20 @@ body{
 
         
     .readinglist{
-            padding-block: var(--spacing-l);
+            padding-block: var(--spacing-m);
             color: var(--black);
             background-color: var(--red);
-            row-gap: var(--spacing-s);
 
-
+            summary, li{
+                padding-block-end: var(--spacing-s);
+            }
             li {
                 font-family: "workbench", sans-serif;
                  font-variation-settings:
                 "BLED"  0,
                 "SCAN" 0;
-                font-size: 3rem;
-                line-height: 3rem;
+                font-size: 2.4rem;
+                line-height: 2.6rem;
 
             }
             
@@ -396,6 +397,9 @@ body{
             display: flex;
             flex-direction: row;
             column-gap: var(--spacing-s);
+        }
+        p{
+            font-size: var(--font-xs);
         }
        
     }
