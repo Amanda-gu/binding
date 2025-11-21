@@ -8,7 +8,8 @@
     --spacing-s: 1rem;
     --spacing-m: 2rem;
     --spacing-l: 4rem;
-    --font-s: 1rem;
+    --font-xs: 0.8rem;
+    --font-s: 1.2rem;
     --font-m: 1.4rem;
     --font-l: 3rem;
     --page-padding:5vw;
@@ -53,15 +54,11 @@ body{
             display: grid;
             grid-template-columns: repeat(12, 1fr);
 
-            .pagenav{
+            .pagenav, .readinglist, .homehgroup{
                 grid-column: 1/ span 12;
             }
-                
-            .readinglist{
-                    grid-column: 1/ span 12;
-            }
      
-            hgroup, section, footer{
+            .pagehgroup, section, footer{
                 grid-column: 3/ span 6;
             }
   
@@ -91,7 +88,24 @@ body{
 
 
 /* body end */
-    
+
+/* page paddings */
+    .content, .pagehgroup, footer{
+        padding-inline: var(--page-padding);
+        @media (width > 980px) {
+            padding-inline:0;
+        }
+    }
+    .readinglist{
+        
+        @media (width > 980px) {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            *{
+                grid-column: 3/ span 8;
+            }
+        }
+    }
   
 /* paragraph block spacing */
     .content:not(#intro, #extrainfo){
@@ -183,6 +197,7 @@ body{
             color: var(--black);
             font-size: var(--font-l); 
             font-optical-sizing: auto;
+            padding-block: var(--spacing-s);
         }
         #authorname{   
                 margin-block-end: 0.4rem;
@@ -193,13 +208,7 @@ body{
             margin-block-end: 1em;
             }
     }
-/* page paddings */
-    .content, .pagehgroup{
-         padding-inline: var(--page-padding);
-        @media (width > 980px) {
-                    padding-inline:0;
-                  }
-    }
+
 /* section title style  */
     .headings {
             font-family: "Workbench", sans-serif;   
@@ -208,7 +217,6 @@ body{
                 "SCAN" 10;
             font-size: var(--font-s);
             line-height: 1.3em;
-  
             padding-block: calc(var(--spacing-s)/2);
             padding-inline: var(--page-padding);
             margin-block-end: var(--spacing-m);
@@ -244,14 +252,10 @@ body{
         
     .readinglist{
             padding-block: var(--spacing-l);
-            padding-inline: var(--page-padding);
             color: var(--black);
             background-color: var(--red);
-
-            display: flex;
-            flex-direction: column;
             row-gap: var(--spacing-s);
-            justify-content: left;
+
 
             li {
                 font-family: "workbench", sans-serif;
@@ -298,7 +302,7 @@ body{
 
 /* citations */
         aside {
-            font-size: calc(var(--font-s)*0.8);
+            font-size: var(--font-xs);
             line-height: 1.3em; 
         }
 
@@ -328,7 +332,7 @@ body{
     }
 
     sup{
-        font-size: calc(var(--font-s)*0.8);
+        font-size: var(--font-xs);
         font-weight: 700;
         background-color: var(--red);
         color: var(--black);
@@ -345,8 +349,6 @@ body{
             color: var(--black);
 
             margin-block-end: var(--spacing-m);
-
-            /* font-size: calc(var(--font-s)*0.7); */
             line-height: 1.3em;   
 
             h3, #quote, p,time{
@@ -356,10 +358,10 @@ body{
 
             h3, #quote{
                 margin-block-end: var(--spacing-s);
-                font-size: var(--font-s);   
             }
             h3{
                 font-family: "Workbench", sans-serif;
+                color: var(--red);
             }
 
             #quote{
@@ -387,7 +389,6 @@ body{
 
     footer{
         margin-block: var(--spacing-m);
-        padding-inline: var(--page-padding);
         hgroup {
             padding: 0;
 
