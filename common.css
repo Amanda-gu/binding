@@ -58,7 +58,10 @@ body{
                 grid-column: 1/ span 12;
             }
 
-            .pagehgroup, section, footer{
+            .homehgroup{
+                padding-inline:0;
+            }
+            .homehgroup,.pagehgroup, section, footer{
                 grid-column: 2/ span 9;
             }
         }
@@ -75,6 +78,7 @@ body{
 
             .homehgroup{
                 grid-column: 3/ span 8;
+                padding-inline:0;
             }
      
             .pagehgroup, section, footer{
@@ -111,17 +115,24 @@ body{
 /* page paddings */
     .content:not(#extrainfo), .pagehgroup, footer, .readinglist{
         padding-inline: var(--page-padding);
-        @media (width > 980px) {
+        @media (width > 780px) {
             padding-inline:0;
         }
     }
     .readinglist{      
        
-        @media (width > 980px) {
+        @media (width > 780px) {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             *{
-                grid-column: 3/ span 8;
+                grid-column: 2/ span 9;
+            }
+        }
+        @media (width > 1200px) {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            *{
+                grid-column: 3/ span 6;
             }
         }
     }
@@ -167,7 +178,7 @@ body{
     h1{
         color: var(--bg-color);
     }
-    h1, h2, .readinglist, summary{
+    h1,.readinglist, summary{
         text-transform: uppercase;
     }
     .homehgroup {
@@ -178,7 +189,7 @@ body{
 	    --inline--end:   -0.06em;
 
         font-family: "Sixtyfour", sans-serif;
-        /* padding-inline: var(--page-padding); */
+        padding-inline: var(--page-padding);
         h1{
             font-size: clamp(1rem, 11vw, 5rem);
             /* youtube: https://www.youtube.com/watch?v=G1buM51f09s */
@@ -227,8 +238,8 @@ body{
         h1 {
             font-family: "Workbench", sans-serif;
             font-variation-settings:
-                "BLED"  0,
-                "SCAN" 20;
+                "BLED"  100,
+                "SCAN" -20;
             margin-block: var(--spacing-s);
             font-size: var(--font-l); 
             font-optical-sizing: auto;
@@ -246,10 +257,10 @@ body{
 
 /* section title style  */
     .headings {
-            font-family: "Workbench", sans-serif;   
+            /* font-family: "Workbench", sans-serif;   
             font-variation-settings:
                 "BLED"  -50,
-                "SCAN" 10;
+                "SCAN" 10; */
             font-size: var(--font-s);
             line-height: 1.3em;
             padding-block: calc(var(--spacing-s)/2);
@@ -276,7 +287,7 @@ body{
             line-height: 1em;   
         }
 
-        @media (width > 980px) {
+        @media (width > 780px) {
             padding-inline: 0;
         }
     }
