@@ -200,8 +200,9 @@ body{
         }
         #authorname{   
                 margin-block-end: 0.4rem;
-                font-size: var(--font-m);
+                font-size: var(--font-s);
             }
+
         section{
             line-height: 1.3em;   
             margin-block-end: 1em;
@@ -266,6 +267,7 @@ body{
 /* text bg */   
     .highlight {
                 background: var(--bg-color);
+                color: var(--accent-color);
                 display: inline;
             }
 
@@ -277,8 +279,7 @@ body{
 /* about author */
     #extrainfo{
     
-        background-color: var(--bg-color);
-        color: var(--accent-color);
+        /* color: var(--accent-color); */
         
 
         h4 {
@@ -293,13 +294,10 @@ body{
 
          @media (width > 780px) {
             h4, p, ul{
-            padding-inline: var(--spacing-s);
+            padding-inline:0;
         }
          }
 
-        section:first-child{
-            padding-block-end: var(--spacing-s);
-        }
 
     }
 
@@ -374,7 +372,7 @@ body{
             }
     }
 /* codepen example: https://codepen.io/Rybak/pen/eerXag */
-    #extrainfo:before, #extrainfo:after, #intro_description:before, #intro_description:after, blockquote:before, blockquote:after, .examples:before, .examples:after {
+ #intro_description:before, #intro_description:after, blockquote:before, blockquote:after, .examples:before, .examples:after {
             content: '';
             display: block;
             position: relative;
