@@ -1,5 +1,46 @@
+
+
 h1 {
     font-style: italic;
     font-variation-settings:
                 "SCAN" -53;
+
+    font-size:  clamp(1rem, 24vw, 10rem);
+    align-self: center;
 }
+
+
+#overlay{
+    font-size:  clamp(1rem, 19vw, 10rem);
+    border: none;
+    font-style:normal;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    padding: 0;
+    top: clamp(-30rem, -10vw, -13rem);
+    padding-inline-start: 12vw;
+    display: inline-block;
+    transform: skew(7deg);
+    
+}
+
+
+
+
+ @media (width < 900px) {
+
+
+            #overlay{
+                top:-9rem;
+                top: clamp(-12rem, -28vw, -9rem);
+            }
+        }
+ @media (width < 500px) {
+
+
+            #overlay{
+                top:-9rem;
+                top: clamp(-13rem, -35vw, -6.5rem);
+            }
+        }
+

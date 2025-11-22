@@ -187,13 +187,11 @@ body{
     .pagehgroup{
 
         margin-block: var(--spacing-m);
-        /* margin-block-end: var(--spacing-l); */
         inset-block-start: var(--sticky-inset);
         h1 {
             font-family: "Workbench", sans-serif;
             font-variation-settings:
-                "BLED"  10,
-                "SCAN" -20;
+                "BLED"  10;
             margin-block: var(--spacing-s);
             font-size: var(--font-l); 
             font-optical-sizing: auto;
