@@ -37,6 +37,7 @@
 }
 
 
+
 body{
     overflow-x: hidden;
     color: var(--bg-color);
@@ -169,7 +170,7 @@ body{
                 }
 
                 #starter{
-                    max-width: 35ch; 
+                    max-width: 38ch; 
                 }
                  
     }
@@ -233,7 +234,7 @@ body{
     .pagehgroup{
 
         margin-block: var(--spacing-m);
-        margin-block-end: var(--spacing-l);
+        /* margin-block-end: var(--spacing-l); */
         inset-block-start: var(--sticky-inset);
         h1 {
             font-family: "Workbench", sans-serif;
