@@ -59,11 +59,14 @@ body{
             .pagenav, .readinglist{
                 grid-column: 1/ span 12;
             }
+            footer{
+                grid-column: 1/ span 12;
+            }
 
             .homehgroup{
                 padding-inline:0;
             }
-            .homehgroup,.pagehgroup, section, footer{
+            .homehgroup,.pagehgroup, section{
                 grid-column: 2/ span 8;
             }
         }
@@ -83,8 +86,12 @@ body{
                 padding-inline:0;
             }
      
-            .pagehgroup, section, footer{
+            .pagehgroup, section{
                 grid-column: 3/ span 6;
+            }
+
+            footer{
+                grid-column: 1/ span 12;
             }
   
             aside{
@@ -115,7 +122,7 @@ body{
 /* body end */
 
 /* page paddings */
-    .content:not(#extrainfo), .pagehgroup, footer, .readinglist{
+    .content:not(#extrainfo), .pagehgroup,.readinglist{
         padding-inline: var(--page-padding);
         @media (width > 780px) {
             padding-inline:0;
@@ -140,9 +147,9 @@ body{
     }
   
 /* paragraph block spacing */
-    .content:not(#intro, #extrainfo){
+    .content:not(#intro, #extrainfo, #bottomdirectory){
                  padding-block-end: var(--spacing-m); 
-                 p:not(blockquote p):not(#intro_description){
+                 p:not(blockquote p):not(#intro_description):not(#bottomdirectory p){
                       margin-block-end: var(--spacing-m);
                  }   
              } 
@@ -280,7 +287,7 @@ body{
     #extrainfo{
     
         /* color: var(--accent-color); */
-        
+        margin-block-end: var(--spacing-l);
 
         h4 {
             text-transform: uppercase;
@@ -297,9 +304,9 @@ body{
             padding-inline:0;
         }
          }
-
-
     }
+
+
 
 /* citations */
     aside {
@@ -378,9 +385,6 @@ body{
             position: relative;
             background-color: var(--bg-color);
             width: var(--page-padding);
-
-            height: 1rem;
-             /* box-shadow: 40vw 0 0 0 var(--accent-color); */
             }
     #intro_description:before, blockquote:before, .examples:before {
             left: calc(-1*var(--page-padding));
@@ -393,10 +397,11 @@ body{
 
     footer{
 
-        margin-block: var(--spacing-m);
+        margin-block-start: var(--spacing-m);
+        background-color: var(--bg-color);
+        color: var(--accent-color);
         hgroup {
             padding: 0;
-
             font-family: "Sixtyfour", sans-serif;
             display: flex;
             flex-direction: row;
@@ -405,8 +410,45 @@ body{
         p{
             font-size: var(--font-xs);
         }
+
+        padding-block: var(--spacing-s);
+
+        #bottomdirectory{
+            background: var(--bg-color);
+            color: var(--accent-color);
+
+            p{
+                margin: 0;
+            }
+         }
+         @media (width > 780px) {
+         
+             display: grid;
+             grid-template-columns: repeat(12, 1fr);
+         
+         
+             *{
+                 grid-column: 2/ span 8;
+             }
+         }
+         
+         
+         @media (width > 1200px) {
+         
+             display: grid;
+             grid-template-columns: repeat(12, 1fr);
+         
+             *{
+                 grid-column: 3/ span 6;
+             }
+         
+         }
+          
+}
+
+
        
-    }
+    
 
 
 
