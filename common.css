@@ -10,10 +10,10 @@
     --spacing-l: 4rem;
     --font-xs: 0.8rem;
     --font-s: 1.2rem;
-    --font-m: 1.4rem;
+    --font-m: 2rem;
     --font-l: 3rem;
     --page-padding:5vw;
-    --sticky-inset:2.5rem;
+    --sticky-inset:2rem;
     line-height: 1.4rem;
     font-size: 120%;
 }
@@ -224,18 +224,12 @@ body{
 
 /* section title style  */
     .headings {
-            /* font-family: "Workbench", sans-serif;   
-            font-variation-settings:
-                "BLED"  -50,
-                "SCAN" 10; */
-            font-size: var(--font-s);
+            font-size: var(--font-m);
             line-height: 1.3em;
             padding-block: calc(var(--spacing-s)/2);
             padding-inline: var(--page-padding);
             margin-block-end: var(--spacing-m);
             color: var(--accent-color);
-            background-color: var(--accent-color);
-    
           }
 
     h2.headings {
@@ -245,9 +239,9 @@ body{
 
     .pagehgroup, .headings{
 
-        border-block-end: solid var(--bg-color);
+        /* border-block-end: solid var(--bg-color);
         border-width: 0.05rem;
-        line-height: 1em;   
+        line-height: 1em;    */
         h1{
             border-block-end: solid var(--bg-color);
             border-width: 0.05rem;

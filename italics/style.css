@@ -27,8 +27,7 @@ h1 {
 
 
 
- @media (width < 900px) {
-
+ @media (width < 900px) {2
 
             #overlay{
                 top:-9rem;
