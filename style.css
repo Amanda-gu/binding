@@ -1,0 +1,123 @@
+/* big hero */
+.homehgroup {
+
+        --block--start:  -0.2em;  /* Font/line-height-dependent! */
+	    --block--end:    -0.23em; /* Just adjust until you get it. */
+	    --inline--start: -0.09em;
+	    --inline--end:   -0.06em;
+
+        font-family: "Sixtyfour", sans-serif;
+        h1{
+            font-size: clamp(1rem, 11vw, 5rem);
+            /* youtube: https://www.youtube.com/watch?v=G1buM51f09s */
+            line-height: 140%;
+            margin-block-start: 8vh;
+            margin-block-end: 4vh;
+
+            display: flow-root; /* Cinches the `block-size`. */
+	        inline-size: fit-content; /* Cinches the `inline-size`. */
+	        margin-inline-end: var(--inline--end);
+	        margin-inline-start: var(--inline--start);
+        }
+
+
+        #type {
+            position: relative;
+            animation-name: headline;
+            animation-timing-function: linear;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+            margin-inline: auto;
+        }
+
+        #darkroom {
+            font-variation-settings:
+                "BLED"  -100,
+                "SCAN" -43;
+            position: absolute;
+            top:0;
+        }
+
+    }
+
+
+/* intro paragraph on homepage */
+    #intro_description {
+        padding-block-start: var(--spacing-s);
+    }  
+
+/* TOC */        
+    .readinglist{
+            padding-block: var(--spacing-m);
+            color: var(--accent-color);
+            background-color: var(--bg-color);
+
+            summary, li{
+                padding-block-end: var(--spacing-s);
+            }
+            summary {
+                text-transform: uppercase;
+                color: var(--bg-color);
+                margin-block-end: 0.4rem;
+            }
+            li {
+                font-family: "workbench", sans-serif;
+
+                font-size: 2.4rem;
+                line-height: 2.4rem;
+
+                a{
+                    display: inline-flex;
+                    align-items: center;
+                    column-gap: var(--spacing-s);
+                }
+            }
+            
+
+            li:nth-child(2){
+                 font-variation-settings:
+                "SCAN" -53;
+                svg {
+                    rect{
+                        height: 0.08rem;
+                    }
+                }
+
+            }
+            li:nth-child(3){
+                 font-variation-settings:
+                "SCAN" -20;
+
+                svg {
+                    rect{
+                        height: 0.2rem;
+                    }
+                }
+            }
+
+            li:nth-child(4){
+                 font-variation-settings:
+                "SCAN" 10;
+
+                svg {
+                    rect{
+                        height: 0.4rem;
+                    }
+                }
+            }
+            
+            li:hover{
+                font-variation-settings:
+                "BLED"  0,
+                "SCAN" -40;
+
+                svg {
+                    rect{
+                        height: 0.15rem;
+                    }
+                }
+            }
+
+
+
+    }
