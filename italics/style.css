@@ -1,33 +1,67 @@
 
-
 h1 {
+    margin-inline: auto;
     font-style: italic;
     font-variation-settings:
                 "SCAN" -53;
-
-    font-size:  clamp(1rem, 24vw, 10rem);
-    align-self: center;
+    font-size:  clamp(1rem, 24vw, 7rem);
+    padding: 0;
+    line-height: 0.8em;
 }
 
-
-#overlay{
-    font-size:  clamp(1rem, 19vw, 10rem);
-    border: none;
+/* arial */
+#overlay1{
+    margin-inline: auto;
+    font-size:  clamp(1rem, 19vw, 7rem);
+    font-weight: 700;
     font-style:normal;
     font-family:  'Arial Narrow', Arial, sans-serif;
-    position: relative;
+    position: absolute;
     padding: 0;
-    top: clamp(-30rem, -10vw, -13rem);
-    padding-inline-start: 12vw;
     display: inline-block;
     transform: skew(7deg);
-    
+    text-align: center;
+}
+
+#overlay3{
+
+    margin-block-end: var(--spacing-m);
 }
 
 
 
 
- @media (width < 900px) {2
+.examples{
+    ul{
+        list-style: square inside;
+    }
+    #chineseitalic {
+        display: inline-block;
+        transform: skew(-7deg);
+    
+        font-size: 3rem;
+        line-height: 1.3em;
+        margin-block-end: 0;
+    }
+}
+
+
+canvas {
+    height: 1vh;    
+    }
+
+#extrainfo:before, #extrainfo:after, #intro_description:before, #intro_description:after, blockquote:before, blockquote:after, .examples:before, .examples:after {      
+        height: 1vh;   
+            }
+#intro_description:before, blockquote:before, .examples:before {
+            top: -1vh;
+            }
+#intro_description:after, blockquote:after, .examples:after {
+             top: 1vh;
+            }
+
+
+ @media (width < 900px) {
 
             #overlay{
                 top:-9rem;

@@ -13,7 +13,7 @@
             line-height: 140%;
             margin-block-start: 8vh;
             margin-block-end: 4vh;
-
+            padding-inline: var(--page-padding);
             display: flow-root; /* Cinches the `block-size`. */
 	        inline-size: fit-content; /* Cinches the `inline-size`. */
 	        margin-inline-end: var(--inline--end);
@@ -39,6 +39,17 @@
         }
 
     }
+
+
+    @media (width > 780px) {
+            .homehgroup{
+                h1{
+                    padding-inline: 0;
+                }
+            }
+
+
+     }
 
 
 /* intro paragraph on homepage */
