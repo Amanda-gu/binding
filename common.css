@@ -35,6 +35,29 @@
             font-family: "Sixtyfour", sans-serif;
             font-size:var(--font-s);
             }
+
+         @media (width > 780px) {
+            padding-inline: 0rem;
+             display: grid;
+             grid-template-columns: repeat(12, 1fr);
+         
+         
+             *{
+                 grid-column: 2/ span 8;
+             }
+         }
+         
+         
+         @media (width > 1200px) {
+         
+             display: grid;
+             grid-template-columns: repeat(12, 1fr);
+         
+             *{
+                 grid-column: 3/ span 6;
+             }
+         
+         }
 }
 
 
