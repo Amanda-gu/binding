@@ -11,17 +11,34 @@ h1 {
 
 /* arial */
 #overlay1{
-    margin-inline: auto;
+    margin: auto;
     font-size:  clamp(1rem, 19vw, 7rem);
     font-weight: 700;
     font-style:normal;
     font-family:  'Arial Narrow', Arial, sans-serif;
     position: absolute;
-    padding: 0;
-    display: inline-block;
     transform: skew(7deg);
     text-align: center;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
 }
+
+
+ @media (width > 560px) {
+        #overlay1{    
+            text-align: left;
+            margin-inline-start: 15vw;
+        }
+        }
+
+ @media (width > 1200px) {
+        #overlay1{    
+            text-align: left;
+            margin-inline-start:20vw;
+        }
+        }
 
 #overlay3{
 
