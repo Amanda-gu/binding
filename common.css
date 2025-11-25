@@ -22,6 +22,7 @@
     --sticky-inset:2rem;
     line-height: 1.4rem;
     font-size: 120%;
+    text-wrap-style: pretty;
 }
 
  @media (width > 1200px) {
@@ -359,19 +360,23 @@ body{
     blockquote, aside.examples{
             background-color: var(--bg-color);
             color: var(--accent-color);
-
+            padding-block: 0.3rem;
             margin-block-end: var(--spacing-m);
-            line-height: 1.3em;   
+            line-height: 1.3em;  
+            
+            #quote{
+                font-size: 1.3em;
+            }
 
             h3, #quote, p, time, li{
 
                 padding-inline: var(--spacing-s);
             }
-
-            h3, #quote{
-                margin-block-end: var(--spacing-s);
+            #quoteauthor{
+                 margin-block-start: var(--spacing-s);
             }
             h3{
+                margin-block-end: var(--spacing-s);
                 font-family: "Workbench", sans-serif;
                 font-variation-settings:
                 "BLED"  0,
