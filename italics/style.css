@@ -7,6 +7,7 @@ h1 {
     font-size:  clamp(1rem, 24vw, 7rem);
     padding: 0;
     line-height: 0.8em;
+    overflow-y: hidden;
 }
 
 /* arial */
@@ -75,10 +76,10 @@ canvas {
         height: 1vh;   
             }
 #intro_description:before, blockquote:before, .examples:before {
-            top: -1vh;
+            top: calc(-1vh +  -0.3rem);
             }
 #intro_description:after, blockquote:after, .examples:after {
-             top: 1vh;
+             top: calc(1vh +  0.3rem);
             }
 
 

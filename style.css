@@ -17,6 +17,9 @@
 	        inline-size: fit-content; /* Cinches the `inline-size`. */
 	        margin-inline-end: var(--inline--end);
 	        margin-inline-start: var(--inline--start);
+            /* text-shadow:
+            0 0 1rem #fe1c1c,
+            0 0 1rem rgb(255, 80, 80); */
         }
 
 
@@ -27,6 +30,7 @@
             animation-duration: 30s;
             animation-iteration-count: infinite;
             margin-inline: auto;
+            z-index: 999;
         }
 
         #darkroom {

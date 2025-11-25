@@ -361,13 +361,14 @@ body{
     body{
         a{
         font-weight: 900;
+        border-bottom: solid 0.1rem var(--bg-color);
     }
     }
-    nav,footer{
+    .readinglist,footer{
         a{
         text-shadow:
-            0 0 0.1rem var(--accent-color),
-            0 0 0.2rem var(--accent-color);
+            0 0 0.08rem var(--accent-color),
+            0 0 0.08rem var(--accent-color);
         }
     }
     a:hover{

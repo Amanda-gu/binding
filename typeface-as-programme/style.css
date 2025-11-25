@@ -49,8 +49,8 @@ canvas {
         height: 3vh;   
             }
 #intro_description:before, blockquote:before, .examples:before {
-            top: -3vh;
+            top: calc(-3vh +  -0.3rem);
             }
 #intro_description:after, blockquote:after, .examples:after {
-             top: 3vh;
+             top: calc(3vh +  0.3rem);
             }

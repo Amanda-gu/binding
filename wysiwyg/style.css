@@ -35,8 +35,8 @@ canvas {
         height: 2vh;   
             }
 #intro_description:before, blockquote:before, .examples:before {
-            top: -2vh;
+            top: calc(-2vh +  -0.3rem);
             }
 #intro_description:after, blockquote:after, .examples:after {
-             top: 2vh;
+             top: calc(2vh +  0.3rem);
             }
