@@ -1,9 +1,30 @@
     
 h1 {
-
     font-variation-settings:
                 "SCAN" -20;
 }
+
+#overlay{
+    margin: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-family:  'Arial Narrow', sans-serif;
+    line-height:1em;
+    position: absolute;
+    text-align: center;
+    top:2em;
+    left: 0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    overflow-x: hidden;
+    justify-items: center;
+    
+    @media (width > 500px) {
+        top:1.3em;
+       }
+}
+
 
 
 canvas {

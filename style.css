@@ -145,7 +145,6 @@
 
     }
 
-
 /* intro paragraph on homepage */
 /* #intro_description {
         padding-block-start: var(--spacing-s); 
@@ -171,12 +170,15 @@
 
 
 #darkroom:before, #darkroom:after{
-            height: 3vh;
+            height: 4vh;
             }
 #intro_description_1:before, #intro_description_1:after{
-            height: 2vh;
+            height: 3vh;
             }
 #intro_description_2:before, #intro_description_2:after{
+            height: 2vh;
+            }
+#intro_description_3:before, #intro_description_3:after{
             height: 1vh;
             }
 
