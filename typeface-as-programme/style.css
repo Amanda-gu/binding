@@ -15,7 +15,7 @@ h1 {
     line-height:1em;
     text-align: center;
     font-size: 3.4rem;
-    -webkit-text-stroke: 0.001rem var(--bg-color); 
+    -webkit-text-stroke: 0.01rem var(--bg-color); 
     color: transparent;
     position: absolute;
     top:0.2em;
