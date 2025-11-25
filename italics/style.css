@@ -29,6 +29,9 @@ h1 {
     margin-right:auto;
     overflow-x: hidden;
     justify-items: center;
+    text-shadow:
+            -0.2rem 0.2rem 0.4rem rgb(255, 13, 13),
+            -0.2rem 0.2rem 0.4rem rgb(255, 35, 35);
     
 }
 
@@ -36,7 +39,7 @@ h1 {
  @media (width > 560px) {
         #overlay1{    
             text-align: left;
-            margin-inline-start: 15vw;
+            margin-inline-start: 13vw;
         }
         }
 

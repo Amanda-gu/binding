@@ -18,8 +18,8 @@
 	        margin-inline-end: var(--inline--end);
 	        margin-inline-start: var(--inline--start);
             text-shadow:
-            0.1rem 0.1rem 0.2rem rgb(255, 66, 66),
-            0.1rem 0.1rem 0.2rem rgb(255, 37, 37);
+            -0.1rem 0.1rem 0.4rem rgb(255, 13, 13),
+            -0.1rem 0.1rem 0.4rem rgb(255, 35, 35);
 
         }
 

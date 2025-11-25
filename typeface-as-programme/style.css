@@ -4,6 +4,9 @@ h1 {
     font-variation-settings:
                 "SCAN" 10;
     z-index: -1;
+    text-shadow:
+            -0.2rem 0.3rem 0.6rem rgb(255, 13, 13),
+            -0.2rem 0.3rem 0.6rem rgb(255, 35, 35);
 
 }
 
