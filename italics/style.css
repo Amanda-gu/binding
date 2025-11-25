@@ -17,7 +17,7 @@ h1 {
     font-size:  clamp(1rem, 19vw, 7rem);
     font-weight: 700;
     font-style:normal;
-    font-family:  'Arial Narrow', Arial, sans-serif;
+    font-family:  'Arial Narrow Bold', sans-serif;
     line-height:1em;
     position: absolute;
     transform: skew(5deg);
