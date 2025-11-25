@@ -6,3 +6,18 @@ h1 {
                 "SCAN" 10;
 }
 
+
+
+canvas {
+    height: 3vh;    
+    }
+
+#extrainfo:before, #extrainfo:after, #intro_description:before, #intro_description:after, blockquote:before, blockquote:after, .examples:before, .examples:after {      
+        height: 3vh;   
+            }
+#intro_description:before, blockquote:before, .examples:before {
+            top: -3vh;
+            }
+#intro_description:after, blockquote:after, .examples:after {
+             top: 3vh;
+            }

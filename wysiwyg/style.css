@@ -4,3 +4,18 @@ h1 {
     font-variation-settings:
                 "SCAN" -20;
 }
+
+
+canvas {
+    height: 2vh;    
+    }
+
+#extrainfo:before, #extrainfo:after, #intro_description:before, #intro_description:after, blockquote:before, blockquote:after, .examples:before, .examples:after {      
+        height: 2vh;   
+            }
+#intro_description:before, blockquote:before, .examples:before {
+            top: -2vh;
+            }
+#intro_description:after, blockquote:after, .examples:after {
+             top: 2vh;
+            }

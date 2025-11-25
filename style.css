@@ -50,11 +50,30 @@
 
 
      }
-
+/* grid */
+.readinglist{      
+       
+        @media (width > 780px) {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            *{
+                grid-column: 2/ span 9;
+            }
+        }
+        @media (width > 1200px) {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            *{
+                grid-column: 3/ span 9;
+            }
+        }
+    }
 
 /* intro paragraph on homepage */
     #intro_description {
         padding-block-start: var(--spacing-s);
+
+        
     }  
 
 /* TOC */        
@@ -62,7 +81,9 @@
             padding-block: var(--spacing-m);
             color: var(--accent-color);
             background-color: var(--bg-color);
-
+            li:last-child{
+                padding-block-end: 0;
+            }
             summary, li{
                 padding-block-end: var(--spacing-s);
             }
@@ -85,7 +106,7 @@
             }
             
 
-            li:nth-child(2){
+            li:nth-child(1){
                  font-variation-settings:
                 "SCAN" -53;
                 svg {
@@ -95,7 +116,7 @@
                 }
 
             }
-            li:nth-child(3){
+            li:nth-child(2){
                  font-variation-settings:
                 "SCAN" -20;
 
@@ -106,7 +127,7 @@
                 }
             }
 
-            li:nth-child(4){
+            li:nth-child(3){
                  font-variation-settings:
                 "SCAN" 10;
 

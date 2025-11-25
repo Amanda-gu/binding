@@ -159,23 +159,7 @@ body{
             padding-inline:0;
         }
     }
-    .readinglist{      
-       
-        @media (width > 780px) {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            *{
-                grid-column: 2/ span 9;
-            }
-        }
-        @media (width > 1200px) {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            *{
-                grid-column: 3/ span 6;
-            }
-        }
-    }
+
   
 /* paragraph block spacing */
     .content:not(#intro, #extrainfo, #bottomdirectory){
@@ -277,7 +261,6 @@ body{
 
     svg{
         fill: var(--accent-color);
-        width:1.8rem; 
         height:1.8rem; 
         rect{
             border-radius: 10rem;
@@ -443,7 +426,9 @@ body{
             color: var(--accent-color);
             margin-block-end: var(--spacing-m);
 
-            p{
+
+            a{
+                display:block;
                 font-size: var(--font-m);
                 line-height: 1.2em;
             }
@@ -511,53 +496,67 @@ body{
 
     /* squares on the margin */
     canvas {
-                width: var(--page-padding);
-                height: 3vh;
-                flex-shrink: 0;
-                background-color: var(--bg-color);
-                position: fixed;
-
+            width: var(--page-padding);
+            height: 3vh;
+            flex-shrink: 0;
+            background-color: var(--bg-color);
+            position: fixed;
             }
+    /* top */
+    #square1, #square2 {
+         top: 10vh;
+         height: 1vh;
+    }
 
     #square1{
-                top: 10vh;
                 left: 0;
             }
 
     #square2{
-                top: 10vh;
                 right: 0;
             }
 
+/* bottom */
+    #square3, #square4 {
+         bottom: 0;
+         height: 4vh;
+    }
+
     #square3{
-                bottom: 0;
                 left: 0;
             }
 
     #square4{
-                bottom: 0;
                 right: 0;
             }
 
+/* top middle */
+    #square5, #square6 {
+        top: 30vh;
+        height: 2vh;
+    }        
 
     #square5{
-                top: 30vh;
                 left: 0;
             }
 
     #square6{
-                top: 30vh;
                 right: 0;
             }
+/* bottom middle */
 
+    #square7, #square8 {
+        bottom: 30vh;
+        height: 3vh;
+    }        
+        
     #square7{
-                bottom: 30vh;
-                left: 0;
+        
+            left: 0;
             }
 
-    #square8{
-                bottom: 30vh;
-                right: 0;
+    #square8{      
+            right: 0;
             }
 
 /* squares on the margin */
