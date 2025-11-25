@@ -17,23 +17,26 @@
 	        inline-size: fit-content; /* Cinches the `inline-size`. */
 	        margin-inline-end: var(--inline--end);
 	        margin-inline-start: var(--inline--start);
-            /* text-shadow:
-            0 0 1rem #fe1c1c,
-            0 0 1rem rgb(255, 80, 80); */
+            text-shadow:
+            0.1rem 0.1rem 0.2rem rgb(255, 66, 66),
+            0.1rem 0.1rem 0.2rem rgb(255, 37, 37);
+
         }
 
 
         #type {
+            
             position: relative;
             animation-name: headline;
             animation-timing-function: linear;
-            animation-duration: 30s;
+            animation-duration: 38s;
             animation-iteration-count: infinite;
             margin-inline: auto;
-            z-index: 999;
+            z-index: -1;
         }
 
         #darkroom {
+           
             font-variation-settings:
                 "BLED"  -100,
                 "SCAN" -43;
@@ -218,7 +221,7 @@ p.intro_description{
         }
 
         50% {
-            top:clamp(1rem, 5vh, 4rem);
+            top:clamp(1rem, 5vh, 5rem);
             font-variation-settings:
                 "BLED"  50,
                 "SCAN" 70;
