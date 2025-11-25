@@ -25,7 +25,7 @@
     --font-m: 2rem;
     --font-l: 3rem;
     --page-padding:5vw;
-    --sticky-inset:0rem;
+    --sticky-inset:0;
     line-height: 1.4rem;
     font-size: 130%;
     text-wrap-style: pretty;
@@ -242,7 +242,7 @@ body{
     .headings {
             font-size: var(--font-m);
             line-height: 1em;
-            padding-block: calc(var(--spacing-s)/2);
+            padding-block: calc(var(--spacing-s)*0.3);
             padding-inline: var(--page-padding);
             margin-block-end: var(--spacing-m);
             color: var(--accent-color);
@@ -255,7 +255,7 @@ body{
     h3.headings{
         font-size: 1.4rem;
         margin-block-end: var(--spacing-s);
-        padding-inline: var(--spacing-s)
+        padding-inline: var(--spacing-s);
     }
 
     .pagehgroup, .headings{
@@ -282,6 +282,8 @@ body{
                 background: var(--bg-color);
                 color: var(--accent-color);
                 display: inline;
+                padding-inline: calc(var(--spacing-s)*0.5);
+                padding-block: calc(var(--spacing-s)*0.3);
             }
 
     .darklight

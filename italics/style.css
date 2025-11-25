@@ -5,7 +5,8 @@ h1 {
     font-variation-settings:
                 "SCAN" -53;
     font-size:  clamp(1rem, 24vw, 7rem);
-    padding: 0;
+    padding-block-end: 0;
+    padding-block-start: 0.4rem;
     line-height: 0.8em;
     overflow-y: hidden;
 }
@@ -60,7 +61,6 @@ h1 {
     #chineseitalic {
         display: inline-block;
         transform: skew(-7deg);
-    
         font-size: 3rem;
         line-height: 1.3em;
         margin-block-end: 0;

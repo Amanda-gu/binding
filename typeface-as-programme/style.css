@@ -56,3 +56,11 @@ canvas {
 #intro_description:after, blockquote:after, .examples:after {
              top: calc(3vh +  0.3rem);
             }
+
+
+#related{
+li{
+    list-style: square inside;
+
+}
+}
