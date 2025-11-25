@@ -14,7 +14,7 @@ h1 {
     line-height:1em;
     text-align: center;
     font-size: 3rem;
-    -webkit-text-stroke: 0.02rem rgb(0, 0, 0); /* 1px black outline */
+    -webkit-text-stroke: 0.02rem rgb(0, 0, 0); 
     color: transparent;
     position: absolute;
     top:1.5em;

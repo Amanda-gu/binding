@@ -108,6 +108,7 @@ body{
         }
 
 
+
     @media (width > 1200px) {
 
             display: grid;
@@ -127,6 +128,7 @@ body{
                     grid-column: 3/ span 6;
                 }
             }
+
 
             footer{
                 grid-column: 1/ span 12;
@@ -341,7 +343,7 @@ body{
 
 /* character styles */
     em{
-        font-weight: 700;
+        font-weight: 900;
     }
 
     sup{
@@ -354,6 +356,26 @@ body{
 
     }
 
+
+    
+    body{
+        a{
+        font-weight: 900;
+    }
+    }
+    nav,footer{
+        a{
+        text-shadow:
+            0 0 0.1rem var(--accent-color),
+            0 0 0.2rem var(--accent-color);
+        }
+    }
+    a:hover{
+         -webkit-text-stroke:0;
+         color: var(--accent-color);
+        background-color: var(--bg-color);
+        text-shadow:0 0 0rem;
+    }
 
 
 /* blockquote */
@@ -404,6 +426,9 @@ body{
             top: 1rem;
             }
 
+
+
+/* page footer */
     footer{
 
         margin-block-start: var(--spacing-m);
