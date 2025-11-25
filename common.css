@@ -117,11 +117,10 @@ body{
             }
 
             .homehgroup{
-                grid-column: 3/ span 8;
                 padding-inline:0;
             }
      
-            .pagehgroup, section{
+            .homehgroup, .pagehgroup, section{
                 grid-column: 3/ span 6;
                 aside{
                     grid-column: 3/ span 6;
@@ -384,19 +383,19 @@ body{
             }
     }
 /* codepen example: https://codepen.io/Rybak/pen/eerXag */
- #intro_description:before, #intro_description:after, blockquote:before, blockquote:after, .examples:before, .examples:after {
+    blockquote:before, blockquote:after, .examples:before, .examples:after {
             content: '';
             display: block;
             position: relative;
             background-color: var(--bg-color);
-            width: var(--page-padding);
+            width: var(--spacing-s);
             }
-    #intro_description:before, blockquote:before, .examples:before {
-            left: calc(-1*var(--page-padding));
+    blockquote:before, .examples:before {
+            left: calc(-1*var(--spacing-s));
             top: -1rem;
             }
-    #intro_description:after, blockquote:after, .examples:after {
-            right: var(--page-padding);
+    blockquote:after, .examples:after {
+            right: var(--spacing-s);
             top: 1rem;
             }
 
@@ -459,44 +458,12 @@ body{
 }
 
 
-       
-    
-
-
-
-
-/* animation on homepage */
-
-@keyframes headline {
-
-        0% {
-            top:clamp(-10rem, -5vh, -2rem);
-            font-variation-settings:
-                "BLED"  50,
-                "SCAN" -53;
-        }
-
-        50% {
-            top:clamp(1rem, 5vh, 4rem);
-            font-variation-settings:
-                "BLED"  50,
-                "SCAN" 70;
-        }
-
-        100% {
-            top:clamp(-10rem, -5vh, -2rem);
-            font-variation-settings:
-                "BLED"  50,
-                "SCAN" -53;
-        }
-        
-    }
-
-
+ 
 
     /* squares on the margin */
     canvas {
             width: var(--page-padding);
+            max-width: var(--spacing-m);
             height: 3vh;
             flex-shrink: 0;
             background-color: var(--bg-color);

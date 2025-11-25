@@ -11,8 +11,7 @@
             font-size: clamp(1rem, 11vw, 5rem);
             /* youtube: https://www.youtube.com/watch?v=G1buM51f09s */
             line-height: 140%;
-            margin-block-start: 8vh;
-            margin-block-end: 4vh;
+            margin-block: 8vh;
             padding-inline: var(--page-padding);
             display: flow-root; /* Cinches the `block-size`. */
 	        inline-size: fit-content; /* Cinches the `inline-size`. */
@@ -69,15 +68,8 @@
         }
     }
 
-/* intro paragraph on homepage */
-    #intro_description {
-        padding-block-start: var(--spacing-s);
-
-        
-    }  
-
 /* TOC */        
-    .readinglist{
+.readinglist{
             padding-block: var(--spacing-m);
             color: var(--accent-color);
             background-color: var(--bg-color);
@@ -99,7 +91,6 @@
                 line-height: 2.4rem;
 
                 a{
-                    display: inline-flex;
                     align-items: center;
                     column-gap: var(--spacing-s);
                 }
@@ -153,3 +144,80 @@
 
 
     }
+
+
+/* intro paragraph on homepage */
+/* #intro_description {
+        padding-block-start: var(--spacing-s); 
+    }   */
+
+#darkroom:before, #darkroom:after, .intro_description:before, .intro_description:after{
+            content: '';
+            display: block;
+            position: relative;
+            background-color: black;
+            width: var(--page-padding);
+            max-width: var(--spacing-m);
+
+            }
+#darkroom:before, .intro_description:before{
+            left: calc(-1*var(--page-padding));
+            top: -0.5rem;
+            }
+#darkroom:after, .intro_description:after{
+            right: calc(var(--page-padding));
+            top: 0.5rem;
+            }
+
+
+#darkroom:before, #darkroom:after{
+            height: 3vh;
+            }
+#intro_description_1:before, #intro_description_1:after{
+            height: 2vh;
+            }
+#intro_description_2:before, #intro_description_2:after{
+            height: 1vh;
+            }
+
+#darkroom:before{
+    left: calc(-1*var(--page-padding) + 0.09em);   
+}
+#darkroom:after{
+    right: calc(var(--page-padding) - 0.09em);
+}
+
+.intro_description{
+    margin-block: var(--spacing-m);
+}
+
+
+
+
+/* animation on homepage */
+
+@keyframes headline {
+
+        0% {
+            top:clamp(-10rem, -5vh, -2rem);
+            font-variation-settings:
+                "BLED"  50,
+                "SCAN" -53;
+        }
+
+        50% {
+            top:clamp(1rem, 5vh, 4rem);
+            font-variation-settings:
+                "BLED"  50,
+                "SCAN" 70;
+        }
+
+        100% {
+            top:clamp(-10rem, -5vh, -2rem);
+            font-variation-settings:
+                "BLED"  50,
+                "SCAN" -53;
+        }
+        
+    }
+
