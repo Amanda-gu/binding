@@ -14,7 +14,7 @@
 }
 
 :root{
-    --bg-color: rgb(26, 0, 0);
+    --bg-color: #1a0000;
     --accent-color: #ff1515;
     --white: #f8f2f2;
     --spacing-s: 1rem;
@@ -26,6 +26,7 @@
     --font-l: 3rem;
     --page-padding:5vw;
     --sticky-inset:0;
+    --tertiary-color:#1a000025;
     line-height: 1.5rem;
     font-size: 130%;
     text-wrap-style: pretty;
@@ -288,10 +289,10 @@ body{
 
     svg{
         fill: var(--accent-color);
-        height:1.8rem; 
-        rect{
-            border-radius: 10rem;
-            }
+        stroke: var(--accent-color);
+        stroke-width: 0.1rem;
+        height:2rem; 
+        width:2rem; 
         }   
 
 /* text bg */   
@@ -348,7 +349,8 @@ body{
             #starter {
                     padding-block-end: var(--spacing-s);
                     font-size: calc(var(--font-l)*0.6);
-                    line-height: 1.1em;           
+                    line-height: 1.1em;        
+                    text-transform: uppercase;   
                     font-family: 'Arial Narrow Bold', sans-serif;
                 }
 
@@ -376,8 +378,10 @@ body{
 
 /* character styles */
     em{
-        font-style: italic;
+        
+        background-color: var(--tertiary-color);
     }
+ 
 
     sup{
         font-size: var(--font-xs);
@@ -394,7 +398,8 @@ body{
     
     section:not(footer,nav){
         a{
-            border-bottom: solid 0.1rem var(--bg-color);
+            border-bottom: solid 0.1rem var(--tertiary-color);
+            
             font-family: 'Arial Narrow',sans-serif;
         }
     }
@@ -403,13 +408,28 @@ body{
         text-shadow:
             0 0 0.08rem var(--accent-color),
             0 0 0.08rem var(--accent-color);
+            svg{
+                line{
+                    filter: drop-shadow(
+                        0 0 0.08rem var(--accent-color));
+                        
+                }
+            }
         }
+        
     }
     a:hover{
          -webkit-text-stroke:0;
          color: var(--accent-color);
         background-color: var(--bg-color);
         text-shadow:0 0 0rem;
+        svg{
+                line{
+                    filter: drop-shadow(
+                        0 0 0rem var(--accent-color));
+                        
+                }
+            }
     }
 
 
@@ -475,15 +495,9 @@ body{
         color: var(--accent-color);
         hgroup {
             text-transform: uppercase;
-            padding: 0;
             font-family: "Sixtyfour", sans-serif;
         }
-        a{
-            display: flex;
-            flex-direction: row;
-            column-gap: var(--spacing-s);
-
-        }
+       
         p{
             font-size: var(--font-xs);
         }
@@ -500,7 +514,9 @@ body{
             text-transform: uppercase;
 
             a{
-                display:block;
+                display: flex;
+                flex-direction: row;
+                column-gap: var(--spacing-s);
                 font-size: var(--font-m);
                 line-height: 1.2em;
             }
@@ -508,8 +524,8 @@ body{
         }
 
          @media (width > 780px) {
-             display: grid;
-             grid-template-columns: repeat(12, 1fr);
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
             padding-inline-start:0;
          
              *{
@@ -521,7 +537,6 @@ body{
          @media (width > 1200px) {
              display: grid;
              grid-template-columns: repeat(12, 1fr);
-         
              *{
                  grid-column: 3/ span 6;
              }

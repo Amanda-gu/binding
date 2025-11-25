@@ -83,6 +83,12 @@ canvas {
             }
 
 
+.makeitalic{
+    font-style: italic;
+    background:transparent;
+    opacity: 0.7;
+}
+
  @media (width < 900px) {
 
             #overlay{
