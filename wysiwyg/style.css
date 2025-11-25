@@ -12,7 +12,7 @@ h1 {
     line-height:1em;
     position: absolute;
     text-align: center;
-    top:2em;
+    top:1em;
     left: 0;
     right:0;
     margin-left:auto;
@@ -21,7 +21,7 @@ h1 {
     justify-items: center;
     
     @media (width > 500px) {
-        top:1.3em;
+        top:0.6em;
        }
 }
 

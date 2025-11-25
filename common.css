@@ -25,7 +25,7 @@
     --font-m: 2rem;
     --font-l: 3rem;
     --page-padding:5vw;
-    --sticky-inset:2rem;
+    --sticky-inset:0rem;
     line-height: 1.4rem;
     font-size: 130%;
     text-wrap-style: pretty;
@@ -200,8 +200,8 @@ body{
 
 /* single page title style */
     .pagehgroup{
-
-        margin-block: var(--spacing-m);
+        margin-block-start:var(--spacing-s);
+        margin-block-end: var(--spacing-m);
         inset-block-start: var(--sticky-inset);
         h1 {
             font-family: "Workbench", sans-serif;
@@ -446,9 +446,12 @@ body{
             text-transform: uppercase;
             padding: 0;
             font-family: "Sixtyfour", sans-serif;
+        }
+        a{
             display: flex;
             flex-direction: row;
             column-gap: var(--spacing-s);
+
         }
         p{
             font-size: var(--font-xs);
