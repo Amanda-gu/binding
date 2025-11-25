@@ -7,6 +7,12 @@
     url('arialnarrow.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Arial Narrow Bold';
+	src: 
+    url('arialnarrow_bold.ttf') format('truetype');
+}
+
 :root{
     --bg-color: rgb(26, 0, 0);
     --accent-color: #ff0000;
@@ -21,7 +27,7 @@
     --page-padding:5vw;
     --sticky-inset:2rem;
     line-height: 1.4rem;
-    font-size: 120%;
+    font-size: 130%;
     text-wrap-style: pretty;
 }
 
@@ -35,14 +41,16 @@
 /* page nav style */
 
 .pagenav {
-        position: sticky;
+        position: fixed;
+        width: 100vw;
+        bottom:0;
         text-transform: uppercase;
-        inset-block-start: 0;
+        /* inset-block-start: 0; */
         background-color: var(--bg-color);
         color: var(--accent-color);
         padding-inline: var(--page-padding);
         padding-block: 0.6rem;
-        z-index: 999;
+        z-index: 1;
         /* border-bottom: solid var(--accent-color) 0.02rem; */
             
         p{
@@ -80,7 +88,7 @@ body{
     overflow-x: hidden;
     color: var(--bg-color);
     background-color: var(--accent-color);
-    font-family: 'Arial Narrow', sans-serif; 
+    font-family: 'Arial Narrow Bold', sans-serif; 
     display: grid;
     p{
         max-width: 80ch;
@@ -343,7 +351,7 @@ body{
 
 /* character styles */
     em{
-        font-weight: 900;
+        font-style: italic;
     }
 
     sup{
@@ -360,7 +368,6 @@ body{
     
     body{
         a{
-        font-weight: 900;
         border-bottom: solid 0.1rem var(--bg-color);
     }
     }
@@ -431,11 +438,12 @@ body{
 
 /* page footer */
     footer{
-
+        z-index: 2;
         margin-block-start: var(--spacing-m);
         background-color: var(--bg-color);
         color: var(--accent-color);
         hgroup {
+            text-transform: uppercase;
             padding: 0;
             font-family: "Sixtyfour", sans-serif;
             display: flex;
@@ -455,7 +463,7 @@ body{
             background: var(--bg-color);
             color: var(--accent-color);
             margin-block-end: var(--spacing-m);
-
+            text-transform: uppercase;
 
             a{
                 display:block;

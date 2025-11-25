@@ -3,6 +3,7 @@
 h1 {
     font-variation-settings:
                 "SCAN" 10;
+    z-index: -1;
 }
 
 
@@ -13,8 +14,8 @@ h1 {
     font-family:  'Arial Narrow', sans-serif;
     line-height:1em;
     text-align: center;
-    font-size: 3rem;
-    -webkit-text-stroke: 0.02rem rgb(0, 0, 0); 
+    font-size: 3.4rem;
+    -webkit-text-stroke: 0.001rem var(--bg-color); 
     color: transparent;
     position: absolute;
     top:1.5em;
@@ -26,6 +27,7 @@ h1 {
     justify-items: center;
 
     @media (width > 425px) {
+        -webkit-text-stroke: 0.02rem var(--bg-color);
         font-size: 4rem;
         top:1em;
        }
