@@ -195,7 +195,13 @@
 
 .intro_description{
     margin-block: var(--spacing-m);
+    padding-inline: var(--page-padding);
+
+    @media (width > 780px) {
+        padding-inline: 0;
+     }
 }
+
 
 
 
