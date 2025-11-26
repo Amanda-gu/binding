@@ -29,7 +29,7 @@ h1 {
        }
 }
 
-.headings, h4 {
+h4 {
     
             border-bottom: solid var(--bg-color) 2vh;
             }

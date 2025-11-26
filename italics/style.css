@@ -68,9 +68,9 @@ em:before{
             }
 
 
-.headings, h4{
-            border-bottom: solid var(--bg-color) 1vh;
-            }
+ h4{
+     border-bottom: solid var(--bg-color) 1vh;
+            } 
 
 #rotation span{
     transform: rotate(20deg);

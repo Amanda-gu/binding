@@ -51,7 +51,7 @@ canvas {
     }
 
 
-.headings, h4 {
+h4 {
        
             border-bottom: solid var(--bg-color) 3vh;
             }
