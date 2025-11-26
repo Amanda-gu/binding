@@ -6,13 +6,15 @@ h1 {
                 "SCAN" 10;
     z-index: -1;
     text-shadow:
-            -0.2rem 0.3rem 0.6rem rgb(255, 13, 13),
-            -0.2rem 0.3rem 0.6rem rgb(255, 35, 35);
-
+            -0.2rem 0.3rem 0.3rem rgba(255, 13, 13, 0.187),
+            -0.2rem 0.3rem 0.3rem rgba(255, 35, 35, 0.256);
+    
 }
 
 
 #overlay{
+    z-index: 1;
+    filter: blur(0rem);
     padding-inline:0;
     margin: auto;
     font-weight: 700;
@@ -51,6 +53,12 @@ h1 {
 canvas {
     height: 3vh;    
     }
+
+
+.headings, h4 {
+            padding-block: calc(var(--spacing-s)*0.3);
+            border-bottom: solid var(--bg-color) 3vh;
+            }
 
 em:before{      
         content: '';

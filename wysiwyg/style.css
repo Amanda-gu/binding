@@ -2,6 +2,7 @@
 h1 {
     font-variation-settings:
                 "SCAN" -20;
+    
 }
 
 #overlay{
@@ -27,6 +28,12 @@ h1 {
         top:0.6em;
        }
 }
+
+.headings, h4 {
+            padding-block: calc(var(--spacing-s)*0.3);
+            border-bottom: solid var(--bg-color) 2vh;
+            }
+
 
 
 em:before{      

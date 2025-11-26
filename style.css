@@ -17,6 +17,7 @@
 	        inline-size: fit-content; /* Cinches the `inline-size`. */
 	        margin-inline-end: var(--inline--end);
 	        margin-inline-start: var(--inline--start);
+            
             text-shadow:
             -0.1rem 0.1rem 0.4rem rgb(255, 13, 13),
             -0.1rem 0.1rem 0.4rem rgb(255, 35, 35);
@@ -104,9 +105,7 @@
                 line-height: 2.4rem;
 
                 a{
-                    /* display: inline-flex; */
                     align-items: center;
-                    /* column-gap: var(--spacing-s); */
                 }
             }
             
@@ -143,7 +142,7 @@
                 "SCAN" -40;
 
                 svg {
-                   stroke-width: 0.15rem;
+                   stroke-width: 0.1rem;
                 }
             }
 
@@ -214,6 +213,7 @@ p.intro_description{
 @keyframes headline {
 
         0% {
+            filter: blur(0.04rem);
             top:clamp(-10rem, -5vh, -2rem);
             font-variation-settings:
                 "BLED"  50,
@@ -221,6 +221,7 @@ p.intro_description{
         }
 
         50% {
+            filter: blur(0rem);
             top:clamp(1rem, 5vh, 5rem);
             font-variation-settings:
                 "BLED"  50,
@@ -229,6 +230,7 @@ p.intro_description{
 
         100% {
             top:clamp(-10rem, -5vh, -2rem);
+            filter: blur(0.04rem);
             font-variation-settings:
                 "BLED"  50,
                 "SCAN" -53;
