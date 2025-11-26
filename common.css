@@ -25,11 +25,12 @@
     --font-m: 2rem;
     --font-l: 3rem;
     --page-padding:5vw;
-    --sticky-inset:0;
+    --sticky-inset:2.8rem;
     --tertiary-color:#1a000025;
     line-height: 1.5rem;
     font-size: 130%;
     text-wrap-style: pretty;
+    overflow-x: hidden;
 }
 
  @media (width > 1240px) {
@@ -101,8 +102,10 @@
             margin-block-start: 0.2em;
         }
 
-
+        
         @media (width > 860px) {
+            top:0;
+            height: 2.8rem;
             padding-inline: 0rem;
              display: grid;
              grid-template-columns: repeat(12, 1fr);
@@ -125,6 +128,7 @@
          
          }
 }
+
 
 
 body{
@@ -192,11 +196,6 @@ body{
             }   
      }
 
-    /* @media (width > 1600px) {
-          .homehgroup, .pagehgroup, section{
-                grid-column: 3/ span 6;
-            }       
-    } */
     @media (width > 1800px) {
           .homehgroup, .pagehgroup, section{
                 grid-column: 3/ span 5;
@@ -270,7 +269,9 @@ body{
             margin-block-end: 1em;
             }
 
-  
+    @media (width > 860px) {
+         margin-block-start:var(--spacing-l);
+        }
     @media (width > 400px) {
             h1{
                 font-size: 4rem;
@@ -302,9 +303,12 @@ body{
 
     h2.headings {
         position: sticky;
-        inset-block-start: var(--sticky-inset);
         background-color: var(--bg-color);
         color: var(--accent-color);
+        @media (width > 860px) {
+            inset-block-start: var(--sticky-inset);
+
+        }
     }
 
     h3.headings{
