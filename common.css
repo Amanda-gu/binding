@@ -382,7 +382,7 @@ body{
 
 /* character styles */
     em{
-        
+        font-family: 'Arial Narrow', sans-serif;
         background-color: var(--tertiary-color);
     }
  
@@ -402,9 +402,7 @@ body{
     
     section:not(footer,nav){
         a{
-            border-bottom: solid 0.1rem var(--tertiary-color);
-            
-            font-family: 'Arial Narrow',sans-serif;
+            border-bottom: solid 0.1rem var(--bg-color);
         }
     }
     .readinglist,footer{
@@ -423,8 +421,8 @@ body{
         
     }
     a:hover{
-         -webkit-text-stroke:0;
-         color: var(--accent-color);
+        -webkit-text-stroke:0;
+        color: var(--accent-color);
         background-color: var(--bg-color);
         text-shadow:0 0 0rem;
         svg{
