@@ -382,8 +382,7 @@ body{
 
 /* character styles */
     em{
-        font-family: 'Arial Narrow', sans-serif;
-        background-color: var(--tertiary-color);
+        font-style: italic;
     }
  
 
@@ -400,9 +399,11 @@ body{
 
 
     
-    section:not(footer,nav){
+    section:not(#bottomdirectory,nav){
         a{
-            border-bottom: solid 0.1rem var(--bg-color);
+            border-bottom: double 0.2rem var(--bg-color);
+            color:rgb(105, 0, 0);
+            border-color: rgb(105, 0, 0);
         }
     }
     .readinglist,footer{
@@ -423,6 +424,7 @@ body{
     a:hover{
         -webkit-text-stroke:0;
         color: var(--accent-color);
+        border-color:var(--accent-color);
         background-color: var(--bg-color);
         text-shadow:0 0 0rem;
         svg{
@@ -444,7 +446,7 @@ body{
             line-height: 1.3em;  
             
             #quote{
-                font-size: 1.3em;
+                font-size: 1.2em;
             }
 
             h3, #quote, p, time, li{

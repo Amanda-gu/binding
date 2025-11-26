@@ -55,8 +55,45 @@ h1 {
     margin-block-end: var(--spacing-m);
 }
 
+em:before{      
+        content: '';
+        display: inline-block;
+        position: relative;
+        background-color:rgb(0, 0, 0);
+        width: 1vh; 
+        height: 1vh;
+        top: 0.3em;
+            }
+
+#rotation span{
+    transform: rotate(20deg);
+    display: inline-block;
+}
 
 
+.glyphs {
+    font-size:0.9em;
+    display: inline;
+    background-color: var(--tertiary-color);
+    padding-inline: 0.8ex;
+    padding-block: 0.4ex;
+    margin-inline-end: 0.2ex;   
+}
+
+/* B I U */
+#trio_bold {
+    font-weight: bold;
+}
+#trio_italic {
+    font-style: italic
+}
+#trio_underline {
+    text-decoration: underline;
+}
+
+.makeunderline {
+    text-decoration: underline;
+}
 
 .examples{
     ul{
@@ -72,6 +109,8 @@ h1 {
 }
 
 
+/* squares */
+
 canvas {
     height: 1vh;    
     }
@@ -86,12 +125,6 @@ canvas {
              top: calc(1vh +  0.3rem);
             }
 
-
-.makeitalic{
-    font-style: italic;
-    background:transparent;
-    opacity: 0.7;
-}
 
  @media (width < 900px) {
 
