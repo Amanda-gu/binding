@@ -67,19 +67,6 @@
         }
     }
 
-@media (width > 860px) {
-        .pagehgroup{
-            h1, section{
-                padding-inline:0;
-            }
-        }
-        #extrainfo{
-           
-                h4, p, ul{
-                padding-inline:0;
-                }
-            }    
-    }
 
 
 
@@ -256,7 +243,7 @@ body{
             font-variation-settings:
                 "BLED"  10;
             margin-block: var(--spacing-s);
-            font-size: var(--font-l); 
+            font-size: 3.4rem; 
             font-optical-sizing: auto;
             padding-block: var(--spacing-s);
         }
@@ -299,7 +286,7 @@ body{
             font-size: 1.8rem;
             line-height: 1em;
             padding-block: calc(var(--spacing-s)*0.3);
-            /* padding-inline: var(--page-padding); */
+            padding-inline: var(--page-padding);
             margin-block-end: var(--spacing-m);
             background-color: var(--accent-color);
           }
@@ -358,7 +345,19 @@ body{
             margin-block-end:var(--spacing-s);
         } 
     }
-
+@media (width > 860px) {
+        .pagehgroup{
+            h1, section{
+                padding-inline:0;
+            }
+        }
+        #extrainfo{
+           
+                h4, p, ul{
+                padding-inline:0;
+                }
+            }    
+    }
      
     
 /* intro quote */
