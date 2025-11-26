@@ -4,16 +4,12 @@ h1 {
     hyphens: manual;
     font-variation-settings:
                 "SCAN" 10;
-    z-index: -1;
     text-shadow:
             -0.2rem 0.3rem 0.3rem rgba(255, 13, 13, 0.187),
             -0.2rem 0.3rem 0.3rem rgba(255, 35, 35, 0.256);
     
 }
-
-
 #overlay{
-    z-index: 1;
     filter: blur(0rem);
     padding-inline:0;
     margin: auto;
@@ -22,7 +18,6 @@ h1 {
     font-family:  'Arial Narrow Bold', sans-serif;
     line-height:1em;
     text-align: left;
-    /* font-size: 3.4rem; */
     font-size: clamp(4rem, 20vw, 6rem);
     -webkit-text-stroke: 0.02rem var(--bg-color); 
     color: transparent;
@@ -50,13 +45,14 @@ h1 {
        }
 }
 
+
 canvas {
     height: 3vh;    
     }
 
 
 .headings, h4 {
-            padding-block: calc(var(--spacing-s)*0.3);
+       
             border-bottom: solid var(--bg-color) 3vh;
             }
 
