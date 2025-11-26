@@ -336,8 +336,8 @@ body{
     }
 @media (width > 860px) {
         .headings:not(h3){
-            padding-inline:1rem;
-            margin-inline: -1rem;
+            padding-inline:var(--spacing-s);
+            margin-inline-start:calc(-1*var(--spacing-s));
         }
 
         .pagehgroup{
