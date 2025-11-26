@@ -102,10 +102,12 @@ em:before{
     #chineseitalic {
         display: inline-block;
         transform: skew(-7deg);
-        font-size: 3rem;
+        font-size: var(--font-m);
         line-height: 1.3em;
         margin-block-end: 0;
     }
+
+
 }
 
 

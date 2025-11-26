@@ -130,9 +130,7 @@ body{
     background-color: var(--accent-color);
     font-family: 'Arial Narrow Bold', sans-serif; 
     display: grid;
-    p{
-        max-width: 80ch;
-    } 
+   
 
 /* desktop grid*/
 
@@ -168,7 +166,7 @@ body{
 
      
             .homehgroup, .pagehgroup, section{
-                grid-column: 3/ span 7;
+                grid-column: 3/ span 6;
             }
 
 
@@ -191,7 +189,7 @@ body{
             }   
      }
 
-    @media (width > 1600px) {
+    /* @media (width > 1600px) {
           .homehgroup, .pagehgroup, section{
                 grid-column: 3/ span 6;
             }       
@@ -200,7 +198,9 @@ body{
           .homehgroup, .pagehgroup, section{
                 grid-column: 3/ span 5;
             }       
-    }
+    } */
+
+}
 /* body end */
 
   
@@ -215,6 +215,12 @@ body{
     .content{
                 em, p, time, h1,li{
                     max-width: 80ch; 
+                }
+
+                blockquote {
+                    p{
+                    max-width: 70ch;
+                    } 
                 }
 
                 #starter{
@@ -450,7 +456,7 @@ body{
             padding-block: 0.3rem;
             margin-block-end: var(--spacing-m);
             line-height: 1.3em;  
-            
+            display: inline-block;
             #quote{
                 font-size: 1.2em;
             }
@@ -628,7 +634,3 @@ body{
 
 /* squares on the margin */
 
-
-
-
-        }
