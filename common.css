@@ -32,7 +32,7 @@
     text-wrap-style: pretty;
 }
 
- @media (width > 1200px) {
+ @media (width > 1240px) {
             :root{
                 font-size: 140%;
                 line-height: 1.4em;
@@ -62,7 +62,7 @@
             font-family: "Sixtyfour", sans-serif;
             }
 
-         @media (width > 780px) {
+         @media (width > 860px) {
             padding-inline: 0rem;
              display: grid;
              grid-template-columns: repeat(12, 1fr);
@@ -74,7 +74,7 @@
          }
          
          
-         @media (width > 1200px) {
+         @media (width > 1240px) {
          
              display: grid;
              grid-template-columns: repeat(12, 1fr);
@@ -100,7 +100,7 @@ body{
 
 /* desktop grid*/
 
-    @media (width > 780px) {
+    @media (width > 860px) {
 
             display: grid;
             grid-template-columns: repeat(12, 1fr);
@@ -135,10 +135,7 @@ body{
             }
      
             .homehgroup, .pagehgroup, section{
-                grid-column: 3/ span 6;
-                aside{
-                    grid-column: 3/ span 6;
-                }
+                grid-column: 3/ span 7;
             }
 
 
@@ -160,14 +157,23 @@ body{
                 grid-column: 3/ span 5;                    
             }   
      }
-                 
-}
+
+    @media (width > 1600px) {
+          .homehgroup, .pagehgroup, section{
+                grid-column: 3/ span 6;
+            }       
+    }
+    @media (width > 1800px) {
+          .homehgroup, .pagehgroup, section{
+                grid-column: 3/ span 5;
+            }       
+    }
 /* body end */
 
 /* page paddings */
     .content:not(#extrainfo),.readinglist{
         padding-inline: var(--page-padding);
-        @media (width > 780px) {
+        @media (width > 860px) {
             padding-inline:0;
         }
     }
@@ -182,7 +188,7 @@ body{
              } 
 
     .content{
-                p, time, h1{
+                em, p, time, h1,li{
                     max-width: 80ch; 
                 }
 
@@ -255,7 +261,7 @@ body{
             padding-inline: var(--page-padding);
         }
 
-        @media (width > 780px) {
+        @media (width > 860px) {
             h1, section{padding-inline:0;}
         }
     }
@@ -285,7 +291,7 @@ body{
             line-height: 1em;   
         }
 
-        @media (width > 780px) {
+        @media (width > 860px) {
             padding-inline: 0;
         }
     }
@@ -335,7 +341,7 @@ body{
             padding-inline: var(--page-padding);
         }
 
-         @media (width > 780px) {
+         @media (width > 860px) {
             h4, p, ul{
             padding-inline:0;
         }
@@ -401,9 +407,7 @@ body{
     
     section:not(#bottomdirectory,nav){
         a{
-            border-bottom: double 0.2rem var(--bg-color);
-            color:rgb(105, 0, 0);
-            border-color: rgb(105, 0, 0);
+            border-bottom: double 0.14rem var(--bg-color);
         }
     }
     .readinglist,footer{
@@ -422,7 +426,6 @@ body{
         
     }
     a:hover{
-        -webkit-text-stroke:0;
         color: var(--accent-color);
         border-color:var(--accent-color);
         background-color: var(--bg-color);
@@ -430,8 +433,7 @@ body{
         svg{
                 line{
                     filter: drop-shadow(
-                        0 0 0rem var(--accent-color));
-                        
+                        0 0 0rem var(--accent-color));   
                 }
             }
     }
@@ -516,6 +518,8 @@ body{
             color: var(--accent-color);
             margin-block-end: var(--spacing-m);
             text-transform: uppercase;
+            /* font-family: "Sixtyfour", sans-serif; */
+            
 
             a{
                 display: flex;
@@ -527,7 +531,7 @@ body{
 
         }
 
-         @media (width > 780px) {
+         @media (width > 860px) {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             padding-inline-start:0;
@@ -538,7 +542,7 @@ body{
          }
          
          
-         @media (width > 1200px) {
+         @media (width > 1240px) {
              display: grid;
              grid-template-columns: repeat(12, 1fr);
              *{
