@@ -39,6 +39,43 @@
             }
         }
 
+
+/* page paddings */
+.content:not(#extrainfo),.readinglist{
+        padding-inline: var(--page-padding);
+        @media (width > 860px) {
+            padding-inline:0;
+        }
+    }
+
+.pagehgroup{
+        h1, section{
+            padding-inline: var(--page-padding);
+        }
+    }
+
+#extrainfo{
+        h4, p, ul{
+            padding-inline: var(--page-padding);
+        }
+    }
+
+@media (width > 860px) {
+        .pagehgroup{
+            h1, section{
+                padding-inline:0;
+            }
+        }
+        #extrainfo{
+           
+                h4, p, ul{
+                padding-inline:0;
+                }
+            }    
+    }
+
+
+
 /* page nav style */
 .pagenav,.readinglist,footer{
         a, hgroup{
@@ -87,7 +124,6 @@
 }
 
 
-
 body{
     overflow-x: hidden;
     color: var(--bg-color);
@@ -130,9 +166,6 @@ body{
                 grid-column: 1/ span 12;
             }
 
-            .homehgroup{
-                padding-inline:0;
-            }
      
             .homehgroup, .pagehgroup, section{
                 grid-column: 3/ span 7;
@@ -169,14 +202,6 @@ body{
             }       
     }
 /* body end */
-
-/* page paddings */
-    .content:not(#extrainfo),.readinglist{
-        padding-inline: var(--page-padding);
-        @media (width > 860px) {
-            padding-inline:0;
-        }
-    }
 
   
 /* paragraph block spacing */
@@ -235,7 +260,7 @@ body{
             }
 
   
-      @media (width > 400px) {
+    @media (width > 400px) {
             h1{
                 font-size: 4rem;
             }
@@ -251,20 +276,8 @@ body{
         }
     }
 
-
-   
-
     }
 
-    .pagehgroup{
-        h1, section{
-            padding-inline: var(--page-padding);
-        }
-
-        @media (width > 860px) {
-            h1, section{padding-inline:0;}
-        }
-    }
 
 /* section title style  */
     .headings {
@@ -321,8 +334,7 @@ body{
             }
 /* about author */
     #extrainfo{
-    
-        /* color: var(--accent-color); */
+
         margin-block-end: var(--spacing-l);
         p, ul{
             font-family:'Arial Narrow', sans-serif;
@@ -336,16 +348,7 @@ body{
             color: var(--bg-color);
             font-size: var(--font-s);
             margin-block-end:var(--spacing-s);
-        }
-        h4, p, ul{
-            padding-inline: var(--page-padding);
-        }
-
-         @media (width > 860px) {
-            h4, p, ul{
-            padding-inline:0;
-        }
-         }
+        } 
     }
 
      
@@ -384,6 +387,7 @@ body{
             align-items: start;
         }
     
+
 
 
 /* character styles */
@@ -627,3 +631,4 @@ body{
 
 
 
+        }
