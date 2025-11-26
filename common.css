@@ -82,12 +82,27 @@
         padding-inline: var(--page-padding);
         padding-block: 0.6rem;
         z-index: 1;
-    
-        p{
-            font-family: "Sixtyfour", sans-serif;
+        font-family: "Sixtyfour", sans-serif;
+        font-variation-settings:
+                "BLED"  0,
+                "SCAN" -40;
+        a{
+            display: inline-flex;
+            align-items: center;
+            svg{
+                width: 1.5rem;
+                height: 1.5rem;
+                stroke-width: 0.1rem;
             }
+            column-gap: 0.5em;
+        }
+        
+        p{
+            margin-block-start: 0.2em;
+        }
 
-         @media (width > 860px) {
+
+        @media (width > 860px) {
             padding-inline: 0rem;
              display: grid;
              grid-template-columns: repeat(12, 1fr);
@@ -415,7 +430,7 @@ body{
             border-bottom: double 0.14rem var(--bg-color);
         }
     }
-    .readinglist,footer{
+    .readinglist,footer,.pagenav{
         a{
         text-shadow:
             0 0 0.08rem var(--accent-color),
@@ -498,8 +513,8 @@ body{
         margin-block-start: var(--spacing-m);
         background-color: var(--bg-color);
         color: var(--accent-color);
+        text-transform: uppercase;
         hgroup {
-            text-transform: uppercase;
             font-family: "Sixtyfour", sans-serif;
         }
        
@@ -513,12 +528,7 @@ body{
 
 
         #bottomdirectory{
-            background: var(--bg-color);
-            color: var(--accent-color);
             margin-block-end: var(--spacing-m);
-            text-transform: uppercase;
-            /* font-family: "Sixtyfour", sans-serif; */
-            
 
             a{
                 display: flex;
