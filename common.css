@@ -137,7 +137,7 @@ body{
     background-color: var(--accent-color);
     font-family: 'Arial Narrow Bold', sans-serif; 
     letter-spacing: 0.008em;
-    line-height: 1.6em;
+    line-height: 1.5em;
     display: grid;
    
 
@@ -301,17 +301,16 @@ body{
             padding-inline: var(--page-padding);
             margin-block-end: var(--spacing-m);
             /* background-color: var(--accent-color);    */
+            
           }
 
     h2.headings {
         position: sticky;
         inset-block-start: 0;
-
         background-color: var(--bg-color);
         color: var(--accent-color);
         @media (width > 860px) {
             inset-block-start: var(--sticky-inset);
-
         }
     }
 
@@ -345,6 +344,7 @@ body{
         margin-block-end: var(--spacing-l);
         p, ul{
             font-family:'Arial Narrow', sans-serif;
+            font-weight: 300;
         }
         section{
             margin-block-end: var(--spacing-m);
@@ -417,6 +417,8 @@ body{
 /* character styles */
     em{
         font-style: italic;
+        box-shadow: 0 0.3vh 0 var(--bg-color);
+
     }
  
 
@@ -475,7 +477,6 @@ body{
             margin-block-end: var(--spacing-m);
             line-height: 1.3em;  
             display: inline-block;
-
             #quote{
                 font-size: 1.3em;
             }
@@ -496,6 +497,7 @@ body{
                 font-family: 'Arial Narrow', sans-serif;
             }
     }
+
 /* codepen example: https://codepen.io/Rybak/pen/eerXag */
     blockquote:before, blockquote:after, .examples:before, .examples:after {
             content: '';

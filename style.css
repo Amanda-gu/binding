@@ -213,7 +213,7 @@ p.intro_description{
 @keyframes headline {
 
         0% {
-            filter: blur(0.04rem);
+            /* filter: blur(0.04rem); */
             top:clamp(-10rem, -5vh, -2rem);
             font-variation-settings:
                 "BLED"  50,
@@ -221,7 +221,7 @@ p.intro_description{
         }
 
         50% {
-            filter: blur(0rem);
+            /* filter: blur(0rem); */
             top:clamp(1rem, 5vh, 5rem);
             font-variation-settings:
                 "BLED"  50,
@@ -230,7 +230,7 @@ p.intro_description{
 
         100% {
             top:clamp(-10rem, -5vh, -2rem);
-            filter: blur(0.04rem);
+            /* filter: blur(0.04rem); */
             font-variation-settings:
                 "BLED"  50,
                 "SCAN" -53;

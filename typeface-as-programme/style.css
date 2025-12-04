@@ -54,13 +54,15 @@ h4 {
     border-bottom: solid var(--bg-color) 3vh;
             }
 
+
+
 em:before{      
         content: '';
         display: inline-block;
         position: relative;
         background-color:rgb(0, 0, 0);
-        width: 3vh; 
-        height: 3vh;
+        width: 2vh; 
+        height: 2vh;
         top: 0.6em;
             }
 
