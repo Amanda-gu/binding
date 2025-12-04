@@ -28,7 +28,7 @@
     --sticky-inset:2.8rem;
     --tertiary-color:#1a000025;
     line-height: 1.5rem;
-    font-size: 130%;
+    font-size: 110%;
     text-wrap-style: pretty;
     overflow-x: hidden;
 }
@@ -135,9 +135,9 @@ body{
     overflow-x: hidden;
     color: var(--bg-color);
     background-color: var(--accent-color);
-    font-family: 'Arial Narrow Bold', sans-serif; 
+    font-family: 'Arial', sans-serif; 
     letter-spacing: 0.008em;
-    line-height: 1.5em;
+    line-height: 1.4em;
     display: grid;
    
 
@@ -260,6 +260,7 @@ body{
         #authorname{   
                 margin-block-end: 0.4rem;
                 font-size: var(--font-s);
+                font-weight: bold;
             }
 
         #authorsubline, time{
@@ -294,7 +295,8 @@ body{
 
 
 /* section title style  */
-    .headings {
+    .headings, h4 {
+            font-family: 'Arial Narrow Bold', sans-serif; 
             font-size: 1.8rem;
             line-height: 1em;
             padding-block: calc(var(--spacing-s)*0.4);
@@ -471,6 +473,7 @@ body{
 
 /* blockquote */
     blockquote, aside.examples{
+        font-family: 'Arial Narrow Bold', sans-serif; 
             background-color: var(--bg-color);
             color: var(--accent-color);
             padding-block: 0.3rem;
@@ -541,6 +544,7 @@ body{
             margin-block-end: var(--spacing-m);
 
             a{
+                font-family: 'Arial Narrow Bold', sans-serif; 
                 display: flex;
                 flex-direction: row;
                 column-gap: var(--spacing-s);

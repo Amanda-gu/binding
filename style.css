@@ -1,3 +1,9 @@
+
+
+body{
+    font-family: 'Arial Narrow Bold', sans-serif; 
+
+}
 /* big hero */
 .homehgroup {
 
@@ -196,6 +202,7 @@
 }
 
 p.intro_description{
+    
     margin-block: var(--spacing-m);
     padding-inline: var(--page-padding);
 
