@@ -10,8 +10,7 @@ h1 {
 }
 
 #overlay{
-    z-index: -1;
-    filter: blur(0rem);
+    z-index: 1;
     padding-inline:0;
     margin: auto;
     font-weight: 700;

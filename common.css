@@ -318,7 +318,6 @@ body{
     h2.headings {
         z-index: 1;
         line-height: 1.2em;
-        /* text-transform: uppercase; */
         text-shadow:
             0 0 0.06rem var(--accent-color),
             0 0 0.06rem var(--accent-color);
