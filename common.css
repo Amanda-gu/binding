@@ -427,7 +427,6 @@ body{
 
 /* character styles */
     em{
-        font-style: italic;
         box-shadow: 0 0.3vh 0 var(--bg-color);
 
     }
@@ -448,6 +447,7 @@ body{
     
     section:not(#bottomdirectory,nav){
         a{
+            font-style: italic;
             border-bottom: double 0.14rem var(--bg-color);
         }
     }

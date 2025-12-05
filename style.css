@@ -204,14 +204,22 @@ body{
 
 p.intro_description{
     
-    margin-block: var(--spacing-m);
-    padding-inline: var(--page-padding);
-    line-height: 120%;
-    @media (width > 780px) {
-        padding-inline: 0;
-     }
-}
+        margin-block: var(--spacing-m);
+        padding-inline: var(--page-padding);
+        line-height: 120%;
+        @media (width > 780px) {
+            padding-inline: 0;
+        }
 
+}
+#intro_description_3{
+   p{
+    margin-block: 0;
+     font-size: 0.7rem;
+            line-height: 2em;
+            font-family: "Arial Narrow", sans-serif;
+   } 
+}
 
 
 footer{
