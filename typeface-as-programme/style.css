@@ -10,6 +10,7 @@ h1 {
 }
 
 #overlay{
+    z-index: -1;
     filter: blur(0rem);
     padding-inline:0;
     margin: auto;
@@ -19,7 +20,7 @@ h1 {
     line-height:1em;
     text-align: left;
     font-size: clamp(4rem, 20vw, 6rem);
-    -webkit-text-stroke: 0.02rem var(--bg-color); 
+    -webkit-text-stroke: 0.01rem var(--bg-color); 
     color: transparent;
     position: absolute;
     top:0.2em;
