@@ -19,6 +19,7 @@ h1 {
     line-height:1em;
     text-align: left;
     font-size: clamp(4rem, 20vw, 6rem);
+    /* text stroke https://www.geeksforgeeks.org/css/how-to-add-stroke-using-css/ */
     -webkit-text-stroke: 0.01rem var(--bg-color); 
     color: transparent;
     position: absolute;
