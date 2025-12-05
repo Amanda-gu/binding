@@ -55,7 +55,7 @@ body{
     }
 
 
-    @media (width > 780px) {
+    @media (width > 860px) {
             .homehgroup{
                 h1{
                     padding-inline: 0;
