@@ -8,6 +8,7 @@ h1 {
             -0.2rem 0.3rem 0.3rem rgba(255, 35, 35, 0.256);
     
 }
+
 #overlay{
     filter: blur(0rem);
     padding-inline:0;

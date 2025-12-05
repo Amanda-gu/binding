@@ -2,8 +2,8 @@
 
 body{
     font-family: 'Arial Narrow Bold', sans-serif; 
-
 }
+
 /* big hero */
 .homehgroup {
 
@@ -13,6 +13,7 @@ body{
 	    --inline--end:   -0.06em;
 
         font-family: "Sixtyfour", sans-serif;
+
         h1{
             font-size: clamp(1rem, 11vw, 5rem);
             /* youtube: https://www.youtube.com/watch?v=G1buM51f09s */
@@ -205,7 +206,7 @@ p.intro_description{
     
     margin-block: var(--spacing-m);
     padding-inline: var(--page-padding);
-
+    line-height: 120%;
     @media (width > 780px) {
         padding-inline: 0;
      }

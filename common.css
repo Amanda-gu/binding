@@ -28,7 +28,7 @@
     --sticky-inset:2.8rem;
     --tertiary-color:#1a000025;
     line-height: 1.5rem;
-    font-size: 110%;
+    font-size: 115%;
     text-wrap-style: pretty;
     overflow-x: hidden;
 }
@@ -293,10 +293,24 @@ body{
 
     }
 
+/* all arial narrows */
+#intro{
+    p, time{
+        font-family: 'Arial Narrow', sans-serif;
+    }
+    #starter{
+         font-family: 'Arial Narrow Bold', sans-serif; 
+    }
+}
+
+.headings, h4, blockquote, aside.examples, #bottomdirectory {
+    font-family: 'Arial Narrow Bold', sans-serif; 
+}
+
 
 /* section title style  */
     .headings, h4 {
-            font-family: 'Arial Narrow Bold', sans-serif; 
+            
             font-size: 1.8rem;
             line-height: 1em;
             padding-block: calc(var(--spacing-s)*0.4);
@@ -390,12 +404,7 @@ body{
                     font-size: calc(var(--font-l)*0.6);
                     line-height: 1.1em;        
                     text-transform: uppercase;   
-                    font-family: 'Arial Narrow Bold', sans-serif;
                 }
-
-            p, time{
-                font-family: 'Arial Narrow', sans-serif;
-            }
         }
 
 
@@ -450,8 +459,7 @@ body{
             svg{
                 line{
                     filter: drop-shadow(
-                        0 0 0.08rem var(--accent-color));
-                        
+                        0 0 0.08rem var(--accent-color));     
                 }
             }
         }
@@ -473,7 +481,6 @@ body{
 
 /* blockquote */
     blockquote, aside.examples{
-        font-family: 'Arial Narrow Bold', sans-serif; 
             background-color: var(--bg-color);
             color: var(--accent-color);
             padding-block: 0.3rem;
@@ -544,7 +551,6 @@ body{
             margin-block-end: var(--spacing-m);
 
             a{
-                font-family: 'Arial Narrow Bold', sans-serif; 
                 display: flex;
                 flex-direction: row;
                 column-gap: var(--spacing-s);
