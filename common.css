@@ -250,7 +250,7 @@ body{
             font-variation-settings:
                 "BLED"  10;
             margin-block: var(--spacing-s);
-            font-size: 3.4rem; 
+            font-size: 3.8rem; 
             font-optical-sizing: auto;
             padding-block: var(--spacing-s);
         }
@@ -274,7 +274,7 @@ body{
         }
     @media (width > 400px) {
             h1{
-                font-size: 4rem;
+                font-size: 4.3rem;
             }
         }
     @media (width > 631px) {
@@ -561,7 +561,7 @@ body{
                 flex-direction: row;
                 column-gap: var(--spacing-s);
                 font-size: var(--font-m);
-                line-height: 1.2em;
+                line-height: 1em;
             }
 
         }

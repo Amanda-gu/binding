@@ -42,6 +42,13 @@ h1 {
  @media (width > 560px) {
         #overlay1{    
             text-align: left;
+            margin-inline-start: 8vw;
+        }
+        }
+
+@media (width > 860px) {
+        #overlay1{    
+            text-align: left;
             margin-inline-start: 13vw;
         }
         }
