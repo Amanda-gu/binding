@@ -78,8 +78,16 @@ em:before{
 
 
 h4{
-     border-bottom: solid var(--bg-color) 1vh;
+     border-bottom: 
+     solid var(--bg-color) 1vh;
             } 
+
+
+blockquote{
+    box-shadow:
+    0.01em 0.01em 0.5em var(--accent-color),
+    0.4em 0.4em 0 var(--bg-color);
+}
 
 #rotation span{
     transform: rotate(20deg);

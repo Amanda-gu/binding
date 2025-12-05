@@ -45,6 +45,12 @@ em:before{
         top: 0.3em;
             }
 
+blockquote{
+    /* reference:https://developer.mozilla.org/en-US/play?uuid=b4cb6f8c1c6705c9ff398b01cb4b4413ab1148cb&state=bY%2FLasMwEEV%2F5SJI24ATqw504RhDu%2BuiH1DIRo4nkWpZcvTAMSH%2FXmy3lIQiRoLLPeLMhcnQapazotJ235yiDVTuDFCcpgf4tBGtGOCltQEtoVdBYrDRobeu9klROaR35X28q9JA%2FzcbpfVtVYpAh6gN%2BVviLQb4oLROoFVDEMoleH%2FUGk55Wk%2FS6WxddOVDWwsvt%2FgQg8CrOZK2sUi7cmeK9GZVlrC99yxnfyku4yedqGtljjky3p23Y1LZ88pLUds%2Bn5WU8RTAsdpQi3HcsXriyDgHR4oNXyyTucmnk3Vn9FIF%2Bk3XIzTfzz%2F4DI%2F4C18stztznRy%2FRkWWsCCpJZazWriGXb8B&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FReference%2FProperties%2Fbox-shadow%2F */
+    box-shadow:
+    0.01em 0.01em 0.5em var(--accent-color),
+    0.6em 0.6em 0 var(--bg-color);
+}
 
 canvas {
     height: 2vh;    

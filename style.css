@@ -214,6 +214,16 @@ p.intro_description{
 
 
 
+footer{
+
+    #colophon{
+        padding-block: calc(var(--spacing-s)*0.5) ;
+        text-transform: none;
+        line-height: 1.2em;
+    }
+}
+
+
 
 
 /* animation on homepage */

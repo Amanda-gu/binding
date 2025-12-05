@@ -37,6 +37,7 @@ h1 {
 
     @media (width > 860px) {
         top:0.2em;
+         -webkit-text-stroke: 0.02rem var(--bg-color);
        }
 
     @media (width > 1000px) {
@@ -59,6 +60,12 @@ h4 {
     border-bottom: solid var(--bg-color) 3vh;
             }
 
+
+blockquote{
+    box-shadow:
+    0.01em 0.01em 0.5em var(--accent-color),
+    1em 1em 0 var(--bg-color);
+}
 
 
 em:before{      

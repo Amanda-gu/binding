@@ -82,7 +82,7 @@
         color: var(--accent-color);
         padding-inline: var(--page-padding);
         padding-block: 0.6rem;
-        z-index: 1;
+        z-index: 2;
         font-family: "Sixtyfour", sans-serif;
         font-variation-settings:
                 "BLED"  0,
@@ -316,12 +316,7 @@ body{
           }
 
     h2.headings {
-        /* font-family: "Sixtyfour", sans-serif;
-         font-family: "Sixtyfour", sans-serif;
-        font-variation-settings:
-                "BLED"  0,
-                "SCAN" -40;
-        font-size: 1rem;*/
+        z-index: 1;
         line-height: 1.2em;
         /* text-transform: uppercase; */
         text-shadow:
@@ -544,8 +539,10 @@ body{
             font-family: "Sixtyfour", sans-serif;
         }
        
-        p{
-            font-size: var(--font-xs);
+        #copyright, #colophon{
+            font-size: 0.7rem;
+            line-height: 2em;
+            font-family: "Arial Narrow", sans-serif;
         }
 
         padding-block: var(--spacing-m);
@@ -561,7 +558,7 @@ body{
                 flex-direction: row;
                 column-gap: var(--spacing-s);
                 font-size: var(--font-m);
-                line-height: 1em;
+                line-height: 1.2em;
             }
 
         }
