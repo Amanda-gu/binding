@@ -10,5 +10,8 @@
 <li>Italics</li>
 <li>WYSIWYG</li>
 <li>Typeface as Programme</li>
+
+<hr>
 <h2>Project Intro</h2>
 <p>Type Darkroom investigates how digital tools have turned typography into a fluid, programmable practice where making and designing merge.</p>
+<p>Across these texts, the idea is the same: the boundary between designing and producing has been blurred. Typography in today’s digital landscape is less about producing a final, polished result, but more about progressive enhancement, reworking the wip.</p>
