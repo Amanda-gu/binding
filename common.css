@@ -132,7 +132,6 @@
 
 
 body{
-    overflow-x: hidden;
     color: var(--bg-color);
     background-color: var(--accent-color);
     font-family: 'Arial', sans-serif; 
@@ -213,9 +212,7 @@ body{
                  padding-block-end: var(--spacing-m); 
                  p:not(blockquote p):not(#intro_description):not(#bottomdirectory p){
                       margin-block-end: var(--spacing-m);
-                 }   
-
-                 
+                 }             
              } 
 
     .content{
