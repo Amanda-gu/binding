@@ -310,14 +310,23 @@ body{
             
             font-size: 1.8rem;
             line-height: 1em;
-            padding-block: calc(var(--spacing-s)*0.4);
+            padding-block: calc(var(--spacing-s)*0.6);
             padding-inline: var(--page-padding);
             margin-block-end: var(--spacing-m);
-            /* background-color: var(--accent-color);    */
-            
           }
 
     h2.headings {
+        /* font-family: "Sixtyfour", sans-serif;
+         font-family: "Sixtyfour", sans-serif;
+        font-variation-settings:
+                "BLED"  0,
+                "SCAN" -40;
+        font-size: 1rem;*/
+        line-height: 1.2em;
+        /* text-transform: uppercase; */
+        text-shadow:
+            0 0 0.06rem var(--accent-color),
+            0 0 0.06rem var(--accent-color);
         position: sticky;
         inset-block-start: 0;
         background-color: var(--bg-color);
@@ -373,7 +382,7 @@ body{
 @media (width > 860px) {
         .headings:not(h3){
             padding-inline:var(--spacing-s);
-            margin-inline-start:calc(-1*var(--spacing-s));
+            margin-inline:calc(-1*var(--spacing-s));
         }
 
         .pagehgroup{
@@ -489,7 +498,7 @@ body{
             }
 
             #quote,li{
-                line-height: 1.3em; 
+                line-height: 1.2em; 
             }
 
             h3, #quote, p, time, li{
