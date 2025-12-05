@@ -207,7 +207,7 @@ p.intro_description{
         margin-block: var(--spacing-m);
         padding-inline: var(--page-padding);
         line-height: 120%;
-        @media (width > 780px) {
+        @media (width > 860px) {
             padding-inline: 0;
         }
 
